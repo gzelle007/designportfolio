@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html"; charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="McG Builders is an Auckland, New Zealand based company lead by Cody Mackay is a qualified builder with over 15 years experience.">
+    <title>Creating a Responsive Website</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="css/screen.css">
+    <!-- media attribute can be screen or all to include your design in printing page -->
+    <script type="application/javascript" src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"></script>
+    <script type="application/javascript" src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js">
+    </script>
+    <script type="application/javascript" src="https://unpkg.com/babel-standalone@6.26.0/babel.js"></script>
+</head>
+<body>
+    <!-- id only use once -->
+    <div id="page">
+        <header class="buildingservices">
+            <!-- span = inline element like anchor tag, extra character on the element-->
+            <a class="logo" title="MCG Builders" href="index.html"><span>MCG Builders</span></a> 
+            <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
+            <div class="hero">
+                <h1>Building dreams to reality</h1>
+                <a class="btn" title="Get advice from experienced builders" href="contact.html#contact">Get advice<span> from experienced builders</span></a>
+            </div>
+        </header>
+
+        <section class="newbuild">
+            <article>
+                <h5>New Builds</h5>
+                <p>
+                    Flat, Mountainous, clifftop, beach side – Any section  we can bring your dream to a reailty
+
+                    Our team is made up of an huge array of skills to ensure the best result is achieved and your dream is brought to life. From health and safety, services, earth works and arborists, we are an all encompassing construction company who wants your families dream to come true.<br><br>
+                    
+                    Starting from the ground:<br><br>
+                     
+                    <strong>Excavations</strong><br>
+                    We have the best operators that will transform your site from your dream to your reality.<br><br>
+                    
+                    <strong>Foundations</strong>
+                    <ul>
+                        <li><strong>Slabs</strong> – Any shape any size we will have your footprint etched out ready for your specially designed bespoke home.</li>
+                        <li><strong>Piles</strong> – The steepest site can be quickly transformed to accommodate your dreams.</li>
+                        <li><strong>Retaining</strong> – on the steepest sections you need the best operators to create an adequate foundation to showcase your dream home</li>
+                    </ul>
+                    
+                    <strong>Structure</strong><br>
+                    The structure is one of the most important fassests of your building and brings to life the true beauty of what you have worked so hard to bring to life. The structure can be created in many ways.<br>
+                    <ul>
+                        <li>Steel portals</li>
+                        <li>Timber framing</li>
+                        <li>Blockwork</li>
+                        <li>Laminated timber beams</li>
+                    </ul>
+                    
+                    <strong>Roof</strong><br>
+                    We pair ourselves with the best roofers to ensure we deliver a roof that lasts the test of time. The roof can be constructed to suit your boundary limits with pitched or flat roofs, there is also a vast extent of options some of the most popular being.<br>
+                    <ul>
+                        <li>Long run – Colour steel</li>
+                        <li>Concrete tiles</li>
+                        <li>Shingles</li>
+                        <li>Membrane</li>
+                    </ul>
+                    
+                    <strong>Cladding</strong><br>
+                    Cladding can be over whelming there as so many options, we simplify the process and only advise the most sound soultions to ensure your building is ever lasting.
+                </p>
+                <a class="btn" title="Building a new house" href="contact.html#contact">Call us now</a>
+            </article>
+        </section>
+
+        <section class="renovate">
+            <article>
+                <h5>Renovations</h5>
+                <p>We have heard many reason over the years “we need more room for our family” to “ we do not want to invite our friends over” whatever your reasons we can accommodate your every need and turn your trusty Faithfull into a wow machine. From a small extension for a extra bedroom to a full scale top to bottom refurbishment turning your once run down well used abode into a upscaled delight.</p>
+                <a class="btn" title="Customise renovations" href="contact.html#contact">Ask us how</a>
+            </article>
+        </section>
+
+        <section class="maintenance">
+            <article>
+                <h5>House Maintenance</h5>
+                <p>As part of our package encourage all of your customers to keep up to date with maintaining your home, we extremely recommend keeping up to date with  your materials Operation Manuals (O&Ms) depending on the item maintenance can vary from a coat of paint  for a spring clean which can massively extend your products life cycle.</p>
+                <a class="btn" title="Handyman" href="contact.html#contact">Preserve your assets</a>
+            </article>
+        </section>
+
+        <nav>
+            <ul>
+                <li>
+                    <a title="Contact" href="contact.html">CONTACT</a>
+                </li>
+                <!-- <li>
+                    <a title="Services" href="services.html" class="activeNav">SERVICES</a>
+                </li> -->
+                <li>
+                    <a title="Portfolio" href="portfolio.html">PORTFOLIO</a>
+                </li>
+                <li>
+                    <a id="home" title="Home" href="index.html">HOME</a>
+                </li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p>&copy; Copyright 2021 | <strong>McG Builders Limited</strong> | All Rights Reserved</p>
+            <div class="content">
+                <a title="Privacy Policy" href="about.html#privacypolicy">Privacy Policy</a>
+                <a title="Terms of Service" href="about.html#termsofuse">Terms of Service</a>
+            </div>
+        </footer>
+        <div class="timedisplay"></div>
+    </div>
+
+    <script type="text/babel">
+
+        function tick(){
+            const element = (
+                <div>
+                    <h6>Time: {new Date().toLocaleTimeString()}</h6>
+                </div>
+            );
+
+            ReactDOM.render(element, document.querySelector('.timedisplay'));
+        }
+
+        setInterval(tick, 1000);
+
+    </script>
+
+</body>
+</html>

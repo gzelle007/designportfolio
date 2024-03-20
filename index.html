@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Descriptions -->
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gizelle is a graphic designer, who thrives in the creative process. She brings ideas to life by designing captivating visuals for print, web design, and digital platforms, often incorporating coding skills to craft engaging interactive experiences."
+    />
+    <title>MyLegend</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/screen.css"
+    />
+    <!-- media attribute can be screen or all to include your design in printing page -->
+
+    <!-- React Script source that makes react work on your website -->
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+    ></script>
+  </head>
+  <body>
+    <!-- id only use once -->
+    <div id="page">
+      <header class="index">
+        <!-- span = inline element like anchor tag, extra character on the element-->
+        <a class="logo" title="MyLegend" href="index.html"
+          ><span>MyLegend</span></a
+        >
+        <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
+        <div class="hero">
+          <!-- Create a roll to change design to conceptualize, create, code-->
+          <h1>
+            I <span class="text-rotator">design</span> products and brands
+          </h1>
+          <a class="btn" title="Resume" href="contact.html#contact"
+            ><span> Download CV</span></a
+          >
+          <a class="btn" title="Projects" href="portfolio.html"
+            ><span> View Projects</span></a
+          >
+        </div>
+      </header>
+
+      <section class="summary" id="summary">
+        <h2>CURIOUSLY CREATIVE</h2>
+        <h4>DESIGNER FOR HIRE</h4>
+        <article class="oneColumn">
+          <p>
+            I engage in the creative process of conceptualizing, designing, and
+            producing visual content for different mediums such as print, web
+            design, and digital platforms. This often entails incorporating
+            elements of coding to create interactive experiences.
+          </p>
+        </article>
+      </section>
+
+      <section class="services" id="services">
+        <h2>Services</h2>
+        <h4>DESIGN STRATEGY AND SOLUTIONS</h4>
+        <p>
+          Crafting strategic design solutions entails meticulous planning and
+          innovative thinking. By collaborating closely with clients, tailored
+          designs are developed from concept to execution, ensuring alignment
+          with objectives and resonance with target audiences. This
+          collaborative approach enables the realization of visionary ideas and
+          the elevation of brands to new heights of success.
+        </p>
+        <aside>
+          <div>
+            <img src="img/icon-web-design.png" alt="Design" />
+            <h3>Design</h3>
+            <p>
+              Graphic design is my passion and profession. Taking pride in
+              seamlessly merging creativity with strategy to bring ideas to
+              life. From conceptualization to execution, I specialize in
+              crafting visually stunning designs that communicate messages
+              effectively and leave a lasting impression.
+            </p>
+          </div>
+        </aside>
+
+        <aside>
+          <div>
+            <img src="img/icon-print.png" alt="Print" />
+            <h3>Print</h3>
+            <p>
+              Leveraging my background in the print industry, encompassing large
+              format printing and mass production of high-end embellished
+              labels, I specialize in delivering top-tier print solutions. With
+              meticulous attention to detail, I ensure each project meets the
+              highest standards, delivering exceptional results.
+            </p>
+          </div>
+        </aside>
+
+        <aside>
+          <div class="content-maintenance">
+            <img src="img/icon-responsive.png" alt="Digital" />
+            <h3>Digital</h3>
+            <p>
+              Crafting innovative solutions tailored to your digital needs, I
+              merge digital design and coding to create intuitive user
+              interfaces and seamless web experiences. I utilize my foundational
+              coding skills and design experience to bring your vision to life.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <h4>TURN YOUR IDEAS INTO REALITY</h4>
+        <div class="content-contact-blurb">
+          <p>
+            Ready to make an impact with your brand? Let's discuss a strategy
+            together. Get in touch for a no obligation consultation.
+          </p>
+          <br />
+          <a class="btn" title="Collaborate" href="contact.html#contact"
+            >Let's Collaborate</a
+          >
+        </div>
+        <aside>
+          <div class="content"></div>
+        </aside>
+      </section>
+
+      <nav>
+        <ul>
+          <li>
+            <a title="Contact" href="contact.html">CONTACT</a>
+          </li>
+          <!-- <li>
+            <a title="Services" href="services.html">SERVICES</a>
+          </li> -->
+          <li>
+            <a title="Portolio" href="portfolio.html">PORTFOLIO</a>
+          </li>
+          <li>
+            <a id="home" title="Home" href="index.html" class="activeNav"
+              >HOME</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <footer>
+        <p>
+          &copy; Copyright 2020 - 2024 | <strong>Gizelle Alarcon</strong> | All
+          Rights Reserved
+        </p>
+        <div class="content">
+          <a title="Privacy Policy" href="about.html#privacypolicy"
+            >Privacy Policy</a
+          >
+          <a title="Terms of Service" href="about.html#termsofuse"
+            >Terms of Service</a
+          >
+        </div>
+      </footer>
+      <div class="timedisplay"></div>
+    </div>
+
+    <script type="text/babel">
+      function tick() {
+        const element = (
+          <div>
+            <h6>Time: {new Date().toLocaleTimeString()}</h6>
+          </div>
+        );
+
+        ReactDOM.render(element, document.querySelector(".timedisplay"));
+      }
+
+      setInterval(tick, 1000);
+    </script>
+  </body>
+</html>

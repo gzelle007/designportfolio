@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="McG Builders is an Auckland, New Zealand based company lead by Cody Mackay is a qualified builder with over 15 years experience."
+    />
+    <title>Creating a Responsive Website</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/screen.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/64beb3d505.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- media attribute can be screen or all to include your design in printing page -->
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+    ></script>
+  </head>
+  <body>
+    <!-- id only use once -->
+    <div id="page">
+      <header class="index">
+        <!-- span = inline element like anchor tag, extra character on the element-->
+        <a class="logo" title="MyLegend" href="index.html"
+          ><span>MyLegend</span></a
+        >
+        <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
+        <div class="hero">
+          <!-- Create a roll to change design to conceptualize, create, code-->
+          <h1>Portfolio</h1>
+        </div>
+      </header>
+
+      <section class="about" id="about">
+        <h2>Selected Work</h2>
+        <h4>CURIOUS CREATIONS</h4>
+        <table>
+          <tr>
+            <td>BUDDY</td>
+            <td>PACKAGING DESIGN</td>
+          </tr>
+          <tr>
+            <td>WEB DESIGN</td>
+            <td>ADHESIVE LABELS</td>
+          </tr>
+          <tr>
+            <td>SIGNWRITING</td>
+            <td>BRANDING</td>
+          </tr>
+        </table>
+      </section>
+
+      <section class="services" id="delivery">
+        <h2>Our Delivery</h2>
+        <h4>HOW WE APPROACH ALL JOBS</h4>
+        <aside>
+          <div>
+            <img src="img/icon-idea.png" alt="Concept" />
+            <h3>Concept</h3>
+            <p>
+              Gain insight into the market, identify the target audience and
+              brainstorm solutions.
+            </p>
+          </div>
+        </aside>
+
+        <aside>
+          <div>
+            <img src="img/icon-creative.png" alt="Create" />
+            <h3>Create</h3>
+            <p>
+              Identify the solution, strategise, establish the framework and
+              design.
+            </p>
+          </div>
+        </aside>
+
+        <aside>
+          <div>
+            <img src="img/icon-code.png" alt="Code" />
+            <h3>Code</h3>
+            <p>
+              Ensure user-friendliness, address accessibility requirements, and
+              deliver an engaging solution through coding.
+            </p>
+          </div>
+        </aside>
+      </section>
+
+      <section class="contact" id="contact">
+        <h2>Get in Touch</h2>
+        <h4>TURN YOUR IDEAS INTO REALITY</h4>
+        <div class="content-contact-blurb">
+          <p>
+            Ready to make an impact with your brand? Let's discuss a strategy
+            together. Get in touch for a no obligation consultation.
+          </p>
+          <br />
+          <a class="btn" title="Collaborate" href="contact.html#contact"
+            >Let's Collaborate</a
+          >
+        </div>
+        <aside>
+          <div class="content"></div>
+        </aside>
+      </section>
+
+      <!-- <section class="privacypolicy" id="privacypolicy">
+            <h2>Privacy Policy</h2>
+            <h4>IN ACCORDANCE TO THE NZ PRIVACY ACT 2020</h4>
+            <article>
+                <p>
+                    Privacy Policy
+                    We collect personal information from you, including information about your:
+                    <ul>
+                        <li>name</li>
+                        <li>contact information</li>
+                        <li>location</li>
+                        <li>computer or network interactions with us</li>
+                        <li>billing or purchase information</li>
+                    </ul>
+                    We collect your personal information in order to improve our services. Besides our
+                    staff, we share this information with a third party in order to process your
+                    information as well as keep it safe.
+
+                    Providing some information is optional. If you choose not to enter your information,
+                    we'll be unable to provide you with online services.
+
+                    You have the right to ask for a copy of any personal information we hold about you,
+                    and to ask for it to be corrected if you think it is wrong. If you’d like to ask
+                    for a copy of your information, or to ha ve it corrected, please contact us at
+                    headoffice@eyecandy.co.nz, or (09) 555 1555.
+                </p>
+            </article>
+        </section>
+
+        <section class="termsofuse" id="termsofuse">
+            <h2>Terms of Use</h2>
+            <h4>KNOW YOUR RIGHTS</h4>
+            <article>
+                <p>
+                    The Ministry of Business Innovation and Employment (Building System Performance) has funded the following building standards, used for Building Code compliance, for free download.
+
+                    This initiative fits within Standards New Zealand’s strategy of working with regulators and industry to get more standards pre-funded, as well as enabling better access to standards that make a difference to the wellbeing of New Zealanders. This, in turn, helps grow New Zealand for all.
+                    
+                    As a regulator of the building system, MBIE wants to reduce barriers that prevent people ‘doing the right thing’ within the New Zealand building system.
+                    
+                    Please note that Standard NZS 4246:2016 Energy efficiency - Installing bulk thermal insulation in residential buildings is sponsored by Tenancy Services.
+                </p>
+            </article><br>
+            <a class="btn" title="NZ Standards" href="https://www.standards.govt.nz/get-standards/sponsored-standards/building-related-standards/">Find out more about building related standards</a>
+        </section> -->
+
+      <nav>
+        <ul>
+          <li>
+            <a title="Contact" href="contact.html">CONTACT</a>
+          </li>
+          <!-- <li>
+                    <a title="Services" href="services.html">SERVICES</a>
+                </li> -->
+          <li>
+            <a title="Portfolio" href="portfolio.html" class="activeNav"
+              >PORTFOLIO</a
+            >
+          </li>
+          <li>
+            <a id="home" title="Home" href="index.html">HOME</a>
+          </li>
+        </ul>
+      </nav>
+
+      <footer>
+        <p>
+          &copy; Copyright 2021 | <strong>McG Builders Limited</strong> | All
+          Rights Reserved
+        </p>
+        <div class="content">
+          <a title="Privacy Policy" href="about.html#privacypolicy"
+            >Privacy Policy</a
+          >
+          <a title="Terms of Service" href="about.html#termsofuse"
+            >Terms of Service</a
+          >
+        </div>
+      </footer>
+      <div class="timedisplay"></div>
+    </div>
+
+    <script type="text/babel">
+      function tick() {
+        const element = (
+          <div>
+            <h6>Time: {new Date().toLocaleTimeString()}</h6>
+          </div>
+        );
+
+        ReactDOM.render(element, document.querySelector(".timedisplay"));
+      }
+
+      setInterval(tick, 1000);
+    </script>
+  </body>
+</html>
