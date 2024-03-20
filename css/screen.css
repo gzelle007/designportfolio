@@ -100,7 +100,7 @@ a.btn:hover {
 
 /* Background: color, image, repeat properties, position properties */
 header.index {
-  height: 430px;
+  height: 480px;
   /* Background: color, image, repeat properties, position properties */
   background: #333 url(../img/designer-on-mac.png) no-repeat center 60px;
   position: relative;
