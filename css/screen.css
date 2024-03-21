@@ -100,11 +100,11 @@ a.btn:hover {
 
 /* Background: color, image, repeat properties, position properties */
 header.index {
-  height: 480px;
+  height: 800px;
   /* Background: color, image, repeat properties, position properties */
   background: #333 url(../img/designer-on-mac.png);
-  background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
   background-attachment: fixed;
 }
 
@@ -510,86 +510,6 @@ section.contact .querybtn {
   transition: all 0.3s ease;
 }
 
-/* nav {
-  background-color: rgba(0, 0, 0, 0.85);
-  position: fixed;
-  top: 0px;
-  padding: 20px 0 0 0;
-  width: 100%;
-} */
-
-/* nav::after {
-  content: "";
-  display: block;
-  clear: both;
-} */
-
-/* Stacks and removes bullet style */
-/* nav ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.activeNav {
-  background-color: #00ced1;
-  border-radius: 2px 2px 0 0;
-}
-nav ul li:hover {
-  background-color: #fff;
-  color: #333;
-}
-nav ul li:hover > ul {
-  display: block;
-}
-
-nav ul ul {
-  position: absolute;
-  top: 100%;
-  background: #00ced1;
-  display: none;
-}
-
-nav ul ul li {
-  position: relative;
-}
-
-nav ul ul ul {
-  left: 100%;
-  top: 0px;
-} */
-
-/* Top level */
-/* Moves whole navigation 200px left */
-/* nav > ul {
-  padding-left: 200px;
-}
-nav > ul > li {
-  float: right;
-}
-nav > ul > li > a {
-  width: auto;
-  padding: 10px 20px;
-} */
-
-/*  Redefine anchor tags */
-/* nav ul li a {
-  display: inline-block;
-  color: #fff;
-  padding: 10px 20px;
-  text-decoration: none;
-  position: relative;
-} */
-
-/* Change visited color as it can over-rode colour above */
-/* nav ul li a:visited {
-  color: #fff;
-}
-
-nav ul li a:hover {
-  background-color: #fff;
-  color: #333;
-} */
-
 /* ------------ FOOTER ------------ */
 footer {
   font-size: 0.8em;
@@ -620,42 +540,42 @@ footer a:hover {
 /* ------------ MEDIA QUERIES ------------ */
 
 /* 1000 px width */
-@media screen and (max-width: 1000px) {
+/* @media screen and (max-width: 1000px) {
   h1 {
     font-size: 2.4em;
-  }
+  } */
 
   /* Header */
-  header div.hero {
+  /* header div.hero {
     width: 80%;
     top: 180px;
     left: 20px;
   }
   header div.hero h1 {
     margin-bottom: 20px;
-  }
+  } */
 
   /* Section - About */
-  section.about article {
+  /* section.about article {
     padding: 0;
     margin: 0;
-  }
+  } */
 
   /* Section - Contact */
-  section.where article {
+  /* section.where article {
     padding: 0;
     margin: 0;
   }
-}
+} */
 
 /* Medium screen tablets */
-@media screen and (max-width: 825px) {
+/* @media screen and (max-width: 825px) {
   h1 {
     font-size: 2.2em;
-  }
+  } */
 
   /* Header */
-  header.index {
+  /* header.index {
     height: 300px;
     background-image: url(../img/house-825x300.jpg);
   }
@@ -675,7 +595,7 @@ footer a:hover {
     width: 80%;
     top: 180px;
     left: 20px;
-  }
+  } */
 
   /* Page - Index */
   /* Section - About */
@@ -684,70 +604,12 @@ footer a:hover {
     background-size: 300px auto;
   }
 
-  /* Page - About */
-  section.delivery {
-    margin-top: 50px;
-    margin-bottom: 50px;
-  }
-  /* Changes content to stack */
-  section.delivery aside {
-    width: 100%;
-    float: none;
-    text-align: center;
-  }
-  section.delivery aside img {
-    width: 20%;
-  }
-
-  /* Section - Health & Safety */
-  /* Changes content to stack */
-  section.healthandsafety aside {
-    width: 100%;
-    text-align: center;
-  }
-
-  /* Page - Contact */
-  section.where article {
-    padding: 20px;
-    background-size: 300px auto;
-  }
-
-  section.contact input {
-    width: 42.5%;
-    justify-content: center;
-  }
-  section.contact .message {
-    width: 89%;
-  }
-  section.contact .querybtn {
-    width: 92%;
-  }
-
   /* Page - Services */
   .newbuild {
     clip-path: polygon(100% 0, 100% 95%, 50% 100%, 0 95%, 0 0);
     padding-bottom: 20px;
   }
-  section.newbuild article {
-    background-position-x: center;
-    padding: 250px 100px 100px 100px;
-    width: 70%;
-  }
-
-  section.renovate article {
-    background-position-x: center;
-    padding: 250px 100px 20px 100px;
-    width: 70%;
-  }
-
-  .maintenance {
-    clip-path: polygon(100% 10%, 100% 100%, 0 100%, 0 10%, 50% 0);
-  }
-  section.maintenance article {
-    background-position-x: center;
-    padding: 250px 100px 20px 100px;
-    width: 70%;
-  }
+  
 
   /* Page - Contact */
   section.contact input {
