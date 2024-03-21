@@ -415,22 +415,117 @@ section.contact .querybtn {
 }
 
 /* ------------ NAVIGATION ------------ */
-nav {
+
+.p-menu1 {
+  height: 100%;
+}
+
+/* Hamburger */
+.hamburger1 {
+  height: 45px;
+  margin: 10px;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  justify-items: right;
+  z-index: 120;
+}
+
+.hamburger1 div {
+  background-color: rgb(51, 51, 51);
+  position: relative;
+  width: 40px;
+  height: 5px;
+  margin-top: 7px;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+
+#toggle1 {
+  display: none;
+}
+
+#toggle1:checked + .hamburger1 .top {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  margin-top: 22.5px;
+}
+
+#toggle1:checked + .hamburger1 .meat {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  margin-top: -5px;
+}
+
+#toggle1:checked + .hamburger1 .bottom {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+#toggle1:checked ~ .menu1 {
+  height: 340px;
+}
+
+/* Menu */
+.menu1 {
+  width: 100%;
+  background-color: #f2f2f2;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  grid-template-rows: 1fr repeat(4, 0.5fr);
+  grid-row-gap: 25px;
+  padding: 0;
+  list-style: none;
+  clear: both;
+  width: auto;
+  text-align: center;
+  height: 0px;
+  overflow: hidden;
+  transition: height 0.4s ease;
+  z-index: 120;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.menu1 a:first-child {
+  margin-top: 40px;
+}
+
+.menu1 a:last-child {
+  margin-bottom: 40px;
+}
+
+.link1 {
+  width: 100%;
+  margin: 0;
+  padding: 10px 0;
+  font: 700 20px "Oswald", sans-serif;
+}
+
+.link1:hover {
+  background-color: #ff7f00;
+  color: rgb(61, 61, 61);
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+/* nav {
   background-color: rgba(0, 0, 0, 0.85);
   position: fixed;
   top: 0px;
   padding: 20px 0 0 0;
-  width: 100%; /* Makes the navigation as wide as the parent */
-}
+  width: 100%;
+} */
 
-nav::after {
+/* nav::after {
   content: "";
   display: block;
   clear: both;
-}
+} */
 
 /* Stacks and removes bullet style */
-nav ul {
+/* nav ul {
   list-style: none;
   margin: 0;
   padding: 0;
@@ -445,14 +540,14 @@ nav ul li:hover {
 }
 nav ul li:hover > ul {
   display: block;
-} /* blocks the none display in nav ul ul */
+}
 
 nav ul ul {
   position: absolute;
   top: 100%;
   background: #00ced1;
   display: none;
-} /* Diplay none hides sub-menu */
+}
 
 nav ul ul li {
   position: relative;
@@ -461,11 +556,11 @@ nav ul ul li {
 nav ul ul ul {
   left: 100%;
   top: 0px;
-}
+} */
 
 /* Top level */
 /* Moves whole navigation 200px left */
-nav > ul {
+/* nav > ul {
   padding-left: 200px;
 }
 nav > ul > li {
@@ -474,26 +569,26 @@ nav > ul > li {
 nav > ul > li > a {
   width: auto;
   padding: 10px 20px;
-}
+} */
 
 /*  Redefine anchor tags */
-nav ul li a {
+/* nav ul li a {
   display: inline-block;
   color: #fff;
   padding: 10px 20px;
   text-decoration: none;
   position: relative;
-}
+} */
 
 /* Change visited color as it can over-rode colour above */
-nav ul li a:visited {
+/* nav ul li a:visited {
   color: #fff;
 }
 
 nav ul li a:hover {
   background-color: #fff;
   color: #333;
-}
+} */
 
 /* ------------ FOOTER ------------ */
 footer {
