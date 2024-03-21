@@ -14,7 +14,7 @@ body {
 
 /* This code will limit the width that items can extend to */
 #page {
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
   position: relative;
 }
