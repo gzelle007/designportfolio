@@ -22,35 +22,38 @@ body {
 /* FONTS */
 
 h1 {
-  margin: 0 0 1em 0; /* em used to give device leaway based on individual devices */
+  margin: 0;
   font-family: "Montserrat", "Open Sans", sans-serif;
-  font-size: 2.8em;
+  font-size: 3.5em;
   font-weight: 600;
   text-shadow: 0px 4px 4px #333;
 }
 
 h2 {
-  margin: 0 0 0.5em 0; /* em used to give device leaway based on individual devices */
+  margin: 0;
+  padding: 0.5em;
   font-family: "Montserrat", "Open Sans", sans-serif;
-  font-size: 2.5em;
-  font-weight: normal;
+  font-size: 2.8em;
+  font-weight: bold;
   line-height: 1.1em;
   text-align: center;
 }
 
 h3 {
-  margin: 0 0 0.5em 0; /* em used to give device leaway based on individual devices */
-  font-size: 1.3em;
+  margin: 0 0 0.5em 0;
+  font-size: 2em;
+  font-family: "Montserrat", "Open Sans", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
 }
 
 h4 {
-  margin: 0 0 1.5em 0; /* em used to give device leaway based on individual devices */
+  margin: 0;
+  padding: 0.5em;
   font-family: "Montserrat", "Open Sans", sans-serif;
+  color: #007FFF;
   font-size: 1em;
-  font-weight: 550;
-  letter-spacing: 0.4rem;
+  letter-spacing: 0.2rem;
   text-align: center;
 }
 
@@ -63,6 +66,8 @@ h5 {
 }
 
 h6 {
+  margin: 0;
+  padding: 0;
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 1rem;
   text-align: center;
@@ -70,7 +75,15 @@ h6 {
 }
 
 p {
-  margin: 0 0 1em 0;
+  margin: 0;
+  padding: 20px 20px 30px;
+}
+
+hr.rounded {
+  border-top: 2px solid #007FFF;
+  margin: 25px auto;
+  width: 10%;
+  border-radius: 1px;
 }
 
 a {
@@ -91,6 +104,7 @@ a.btn {
   border: 2px solid #fff;
   border-radius: 50px;
   padding: 10px 30px;
+  margin: 20px;
   transition: background-color 0.5s; /* delays the a.btn:hover color change to make an animation */
 }
 a.btn:hover {
@@ -101,7 +115,7 @@ a.btn:hover {
 
 /* Background: color, image, repeat properties, position properties */
 header.index {
-  height: 800px;
+  height: 575px;
   /* Background: color, image, repeat properties, position properties */
   background: #333 url(../img/designer-on-mac.png);
   background-repeat: no-repeat;
@@ -109,7 +123,7 @@ header.index {
   background-attachment: fixed;
 }
 
-header.aboutus {
+/* header.aboutus {
   height: 430px;
   background: #333 url(../img/hero-about-1200x430.jpg) no-repeat center bottom;
   position: relative;
@@ -120,11 +134,11 @@ header.buildingservices {
   background: #333 url(../img/hero-services-1200x430.jpg) no-repeat center
     bottom;
   position: relative;
-}
+} */
 
 header.contactus {
   height: 430px;
-  background: #333 url(../img/hero-contact-1200x430.jpg) no-repeat center bottom;
+  background: #333 url(../img/designer-on-mac.png) no-repeat center bottom;
   position: relative;
 }
 
@@ -146,15 +160,20 @@ header a.logo span {
 
 header div.hero {
   position: absolute;
-  width: 80%;
-  top: 180px;
-  left: 20px;
+  width: 100%;
+  top: 220px;
 }
 
 header div.hero h1 {
+  text-align: center;
   line-height: 1em;
   margin: 0 0 30px 0;
   color: #fff;
+}
+
+#quick-links {
+  text-align: center;
+  padding: 25px;
 }
 
 /* ------------ SECTION - ALL ------------ */
@@ -173,16 +192,19 @@ section::after {
 
 section.summary {
   background-color: #333;
-  padding-top: 50px;
+  padding-top: 90px;
   padding-bottom: 100px;
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
+  /* Clip path arrow down */
+  /* clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%); */
   height: 600;
 }
 
-section.summary article {
+.oneColumn {
   text-align: center;
-  padding: 0 10%;
+  padding: 0 30%;
 }
+
+
 
 /* ------------ SECTION - HOME ------------ */
 
@@ -295,8 +317,8 @@ section.termsofuse article {
 /* ------------ SECTION - SERVICES ------------ */
 
 section.services {
-  margin-top: 50px;
-  margin-bottom: 50px;
+  margin-top: 90px;
+  margin-bottom: 100px;
   color: #333;
 }
 
@@ -305,7 +327,7 @@ section.services aside {
   width: 30%;
   float: left;
   text-align: center;
-  padding: 10px 1.5%;
+  padding: 10px;
 }
 
 section.services .content {
@@ -317,7 +339,9 @@ section.services .content {
 }
 
 section.services aside img {
-  width: 50%;
+  padding: 20px 20px 5px;
+  display: inline-block;
+  width: 35%;
 }
 
 /* ------------ PAGE - SERVICES ------------ */
@@ -377,9 +401,9 @@ section.where article aside {
 
 section.contact {
   background-color: #007fff;
-  padding-top: 80px;
-  padding-bottom: 50px;
-  clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%);
+  padding-top: 90px;
+  padding-bottom: 100px;
+  /* clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%); */
 }
 
 section.contact .content-contact-blurb {
@@ -418,7 +442,7 @@ section.contact .querybtn {
 /* ------------ NAVIGATION ------------ */
 
 .p-menu1 {
-  height: 100%;
+  height: 250px;
 }
 
 /* Hamburger */
@@ -517,6 +541,7 @@ section.contact .querybtn {
 /* ------------ FOOTER ------------ */
 footer {
   font-size: 0.8em;
+  text-align: center;
   margin: 40px;
   color: #333;
 }
@@ -524,7 +549,7 @@ footer .content {
   display: inline;
 }
 footer a {
-  margin-left: 30px;
+  padding: 30px;
   color: #333;
 }
 footer a:visited {
