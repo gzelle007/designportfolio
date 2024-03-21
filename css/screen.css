@@ -463,7 +463,9 @@ section.contact .querybtn {
 }
 
 #toggle1:checked ~ .menu1 {
-  height: 340px;
+  height: 270px;
+  width: 200px;
+  float: right;
 }
 
 /* Menu */
