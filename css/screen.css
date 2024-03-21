@@ -204,7 +204,35 @@ section.summary {
   padding: 0 30%;
 }
 
+/* 3 column flex box */
+* {
+  box-sizing: border-box;
+}
 
+.l-fg3 {
+  display: flex;
+  flex-wrap: wrap;
+  @media (min-width: 600px) {
+    margin: -10px;    
+  }
+  
+  > div {
+    padding: 1.5rem;
+    flex-basis: 100%;
+    @media (min-width: 600px) {
+      margin: 10px;
+      flex-basis: calc(33.333% - 20px);      
+    }
+  }
+  
+  > div + div {
+    @media (max-width: 599px) {
+      margin-top: 20px;      
+    }
+  }
+  
+
+}
 
 /* ------------ SECTION - HOME ------------ */
 
