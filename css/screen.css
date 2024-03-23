@@ -1,6 +1,10 @@
 /* Imports Open Sans from google font */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600;700&display=swap");
 
+/* Task List
+- todo
+- fixme */
+
 /* Rules that apply to whole html site */
 body {
   font-family: "Open Sans", sans-serif;
@@ -71,13 +75,12 @@ h6 {
   padding: 0;
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 1rem;
-  text-align: center;
   font-weight: 400;
 }
 
 p {
   margin: 0;
-  padding: 20px 20px 30px;
+  padding: 0;
 }
 
 hr.rounded {
@@ -85,6 +88,11 @@ hr.rounded {
   margin: 25px auto;
   width: 10%;
   border-radius: 1px;
+}
+
+hr.spacer {
+  border: none;
+  margin-bottom: 30px;
 }
 
 a {
@@ -123,19 +131,6 @@ header.index {
   background-size: 100%;
   background-attachment: fixed;
 }
-
-header.buddy {
-  height: 430px;
-  background: #333 url(../img/logo-buddy.svg) no-repeat center bottom;
-  position: relative;
-}
-
-/* header.buildingservices {
-  height: 430px;
-  background: #333 url(../img/hero-services-1200x430.jpg) no-repeat center
-    bottom;
-  position: relative;
-} */
 
 header.contactus {
   height: 430px;
@@ -254,7 +249,9 @@ section::after {
 
 /* ------------ PAGE - INDEX SUMMARY ------------ */
 
-section.summary {
+/* GREY SECTION CONTAINER */
+
+section.greycontainer {
   background-color: #333;
   padding-top: 90px;
   padding-bottom: 100px;
@@ -292,6 +289,9 @@ section.summary {
       flex-basis: calc(33.333% - 20px);
     }
   }
+
+  /* fixme */
+  /* fix display to be flex and responsive */
 
   /* Portfolio Image Display Layout*/
 
@@ -374,9 +374,115 @@ img {
   max-height: 40%;
 }
 
-/* ------------ SECTION - HOME ------------ */
+/* ------------ SKILLS SECTION ------------ */
 
-/* Text Rotation */
+.skillcontainer {
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+  display: flex;
+}
+
+.skillcontent {
+  width: 200px;
+  color: #777;
+}
+
+/* % Rating 10, 25, 35, 50, 75, 90, 100 */
+
+.skillmeter100 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: #00ced1;
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.skillmeter90 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 209, 1) 88%,
+    rgba(112, 112, 112, 1) 92%
+  );
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.skillmeter75 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 209, 1) 73%,
+    rgba(112, 112, 112, 1) 77%
+  );
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.skillmeter50 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 209, 1) 48%,
+    rgba(112, 112, 112, 1) 52%
+  );
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.skillmeter35 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 209, 1) 33%,
+    rgba(112, 112, 112, 1) 37%
+  );
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.skillmeter25 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 209, 1) 23%,
+    rgba(112, 112, 112, 1) 27%
+  );
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.skillmeter10 {
+  height: 10px;
+  width: 150px;
+  position: relative;
+  background: linear-gradient(
+    90deg,
+    rgba(0, 206, 209, 1) 8%,
+    rgba(112, 112, 112, 1) 12%
+  );
+  border-radius: 25px;
+  padding: 1px;
+  box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
 
 /* ------------ SECTION - ABOUT ------------ */
 
@@ -394,23 +500,23 @@ section.about article aside {
   padding: 0px 2.5%;
 }
 
-/* ------------ SECTION - SERVICES ------------ */
+/* ------------ WHITE SECTION CONTAINER ------------ */
 
-section.services {
+section.whitecontainer {
   margin-top: 90px;
   margin-bottom: 100px;
   color: #333;
 }
 
 /* divides the aside content to 33% of the page */
-section.services aside {
+section.whitecontainer aside {
   width: 30%;
   float: left;
   text-align: center;
   padding: 10px;
 }
 
-section.services .content {
+section.whitecontainer .content {
   margin: 15px;
   background: no-repeat center top; /* no repeat, x-position, y-position */
   background-size: 75px 75px;
@@ -418,11 +524,13 @@ section.services .content {
   min-height: 100px;
 }
 
-section.services aside img {
+section.whitecontainer aside img {
   padding: 20px 20px 5px;
   display: inline-block;
   width: 35%;
 }
+
+/* Portfolio Image Display */
 
 /* ------------ PAGE - CONTACT ------------ */
 
@@ -479,6 +587,50 @@ section.contact .querybtn {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
+/* ------------ PAGE - PROJECTS ------------ */
+
+/* BUDDY */
+
+/* HERO */
+header.buddy {
+  height: 430px;
+  background: #333 url(../img/logo-buddy.svg) no-repeat center bottom;
+  position: relative;
+}
+
+/* TABLE */
+
+/* Border Box */
+.skillstable {
+  position: relative;
+  width: 40%;
+  height: auto;
+  /* padding: 2%; */
+  border: 3px solid #f2f2f2;
+}
+
+/* Skills Rows */
+.rowonecolone {
+  border: 2px solid #ff7f00;
+  width: 34%;
+  height: auto;
+  position: absolute;
+  left: 3%;
+  top: 3%;
+}
+
+.rowonecoltwo {
+  border: 2px solid #ff7f00;
+  width: 55%;
+  height: auto;
+  position: absolute;
+  right: 3%;
+}
+
+.rowtwocolone {
+  border: 2px solid #ff7f00;
+}
+
 /* ------------ NAVIGATION ------------ */
 
 .p-menu1 {
@@ -487,9 +639,11 @@ section.contact .querybtn {
 
 /* Hamburger */
 .hamburger1 {
+  position: fixed;
+  top: 5px;
+  right: 5px;
   height: 45px;
   padding: 10px;
-  position: absolute;
   right: 30px;
   display: -ms-grid;
   display: grid;
@@ -499,7 +653,7 @@ section.contact .querybtn {
 }
 
 .hamburger1 div {
-  background-color: rgb(255, 127, 0);
+  background-color: rgb(0, 127, 255);
   position: relative;
   width: 40px;
   height: 5px;
@@ -507,6 +661,12 @@ section.contact .querybtn {
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
 }
+
+/* fixme */
+/* menu hover colour change only changes one line */
+/* .hamburger1 div:hover {
+  background-color: #ff7f00;
+} */
 
 #toggle1 {
   display: none;
@@ -535,9 +695,9 @@ section.contact .querybtn {
   float: right;
 }
 
-/* Hamburger Menu */
+/*  Menu */
 .menu1 {
-  width: 100%;
+  width: 200px;
   background-color: #f2f2f2;
   margin: 0;
   display: -ms-grid;
@@ -574,6 +734,8 @@ section.contact .querybtn {
 .link1:hover {
   /* background-color: #ff7f00; */
   color: #ff7f00;
+  font-weight: bold;
+  font-size: 1.1em;
   /* -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease; */
 }

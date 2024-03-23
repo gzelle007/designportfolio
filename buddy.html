@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <!-- Meta Descriptions -->
+    <!-- todo: insert my legend logo to title, SEO -->
     <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
@@ -17,19 +17,6 @@
     />
     <!-- media attribute can be screen or all to include your design in printing page -->
 
-    <!-- React Script source that makes react work on your website -->
-    <script
-      type="application/javascript"
-      src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"
-    ></script>
-    <script
-      type="application/javascript"
-      src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"
-    ></script>
-    <script
-      type="application/javascript"
-      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
-    ></script>
   </head>
   <body>
     <!-- id only use once -->
@@ -58,7 +45,7 @@
           </nav>
         </section>
 
-        <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
+        <!-- todo - Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
         <div class="hero">
       </header>
 
@@ -76,10 +63,10 @@
             families, redefining the baby care experience.
           </p>
         </article>
-        <table>
-          <tr>
-            <th>Skills</th>
-            <td>
+        <div class="skillstable">
+          <div class="rowonecolone"><h6>Skills Required</h6></div>
+          <div class="rowonecoltwo">
+            <p>
               App Web Design <br>
               Insight & Development <br>
               Figma & Adobe CS <br>
@@ -87,29 +74,33 @@
               Market Evaluation <br>
               Unique Value & Proposition <br>
               Development Methodology: Kanban <br>
-              HTML & CSS <br>
-            </td>
-          </tr>
-          <tr>
-            <th>Categories</th>
-            <td>UX UI Design</td>
-          </tr>
-          <tr>
-            <th>Copyright</th>
-            <td>
-              Gizelle Alarcon &copy 2021 <br>
-              Whitecliffe Project 2021
-            </td>
-          </tr>
-          <tr>
-            <th>Team Credit</th>
-            <td>Francesca Schmidlin <br>
+              HTML & CSS
+            </p>
+          </div>
+          <div class="rowtwo"><h6>Categories</h6></div>
+          <div class="rowtwocoltwo">
+            <p>
+              Product Concept Design <br>
+              UX UI Design
+            </p>
+          </div>
+          <div class="rowthreecolone"><h6>Copyright</h6></div>
+          <div class="rowthreecoltwo">
+            <p>
+              Gizelle Alarcon &copy; 2021 -
+              <script type="text/javascript">document.write( new Date().getFullYear() );</script>
+            </p>
+          </div>
+          <div class="rowfourcolone"><h6>Team Credit</h6></div>
+          <div class="rowfourcoltwo">
+            <p>
+              Francesca Schmidlin <br>
               Jun Park <br>
               Xun Wang <br>
-              Jhawan Raika-Morgan <br>
-            </td>
-          </tr>
-        </table>
+              Jhawan Raika-Morgan
+            </p>
+          </div>
+        </div>
       </section>
 
       <section class="services" id="services">
@@ -157,7 +148,7 @@
         <div class="spacer"></div>
       </section>
       
-      <!-- CONTACT - Get in Touch -->
+      <!-- todo - create a usable contact section-->
       <section class="contact" id="contact">
         <h2>Get in Touch</h2>
         <div class="content-contact-blurb">
@@ -180,9 +171,13 @@
 
       <footer>
         <p>
-          &copy; Copyright 2020 - 2024 | <strong>Gizelle Alarcon</strong> | All
+          &copy; Copyright 2020 - 
+          <script type="text/javascript">document.write( new Date().getFullYear() );</script>
+           | <strong>Gizelle Alarcon</strong> | All
           Rights Reserved
         </p>
+        <!-- todo - Create Privacy Policy and Terms of Service info
+        - Perhaps a overlay hover or popup? -->
         <div class="content">
           <a title="Privacy Policy" href="about.html#privacypolicy"
             >Privacy Policy</a
@@ -195,18 +190,5 @@
       <div class="timedisplay"></div>
     </div>
 
-    <script type="text/babel">
-      function tick() {
-        const element = (
-          <div>
-            <h6>Time: {new Date().toLocaleTimeString()}</h6>
-          </div>
-        );
-
-        ReactDOM.render(element, document.querySelector(".timedisplay"));
-      }
-
-      setInterval(tick, 1000);
-    </script>
   </body>
 </html>
