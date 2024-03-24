@@ -40,24 +40,6 @@
           ><span>MyLegend</span></a
         >
 
-        <!-- Navigation Hamburger Menu -->
-        <section class="p-menu1">
-          <nav id="navbar" class="navigation" role="navigation">
-            <input id="toggle1" type="checkbox" />
-            <label class="hamburger1" for="toggle1">
-              <div class="top"></div>
-              <div class="meat"></div>
-              <div class="bottom"></div>
-            </label>
-
-            <nav class="menu1">
-              <a class="link1" href="index.html">Home</a>
-              <a class="link1" href="portfolio.html">Portfolio</a>
-              <a class="link1" href="contact.html">Contact</a>
-            </nav>
-          </nav>
-        </section>
-
         <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
         <div class="hero">
           <!-- Create a roll to change design to conceptualize, curate, create, code-->
@@ -88,6 +70,24 @@
             >
           </div>
         </div>
+
+        <!-- Navigation Hamburger Menu -->
+        <section class="p-menu1">
+          <nav id="navbar" class="navigation" role="navigation">
+            <input id="toggle1" type="checkbox" />
+            <label class="hamburger1" for="toggle1">
+              <div class="top"></div>
+              <div class="meat"></div>
+              <div class="bottom"></div>
+            </label>
+
+            <nav class="menu1">
+              <a class="link1" href="index.html">Home</a>
+              <a class="link1" href="portfolio.html">Portfolio</a>
+              <a class="link1" href="contact.html">Contact</a>
+            </nav>
+          </nav>
+        </section>
       </header>
 
       <section class="greycontainer">
@@ -122,17 +122,27 @@
         <div class="threeColumns">
           <div class="icon">
             <p>
-              <img src="img/icon-web-design.svg" alt="Design" />
+              <img
+                class="iconcolor"
+                src="img/icon-web-design.svg"
+                alt="Design"
+              />
             </p>
             <h4>DESIGN</h4>
           </div>
           <div class="icon">
-            <p><img src="img/icon-print.svg" alt="Print" /></p>
+            <p>
+              <img class="iconcolor" src="img/icon-print.svg" alt="Print" />
+            </p>
             <h4>PRINT</h4>
           </div>
           <div class="icon">
             <p>
-              <img src="img/icon-responsive.svg" alt="Digital" />
+              <img
+                class="iconcolor"
+                src="img/icon-responsive.svg"
+                alt="Digital"
+              />
             </p>
             <h4>DIGITAL</h4>
           </div>
@@ -150,16 +160,12 @@
         <h4>Graphic Design Concepts</h4>
         <div class="skillcontainer">
           <div class="skillcontent">
-            <div class="skillmeter100"></div>
-            <h6>Mass Production</h6>
-          </div>
-          <div class="skillcontent">
             <div class="skillmeter90"></div>
-            <h6>Brand</h6>
+            <h6>Development &amp; Methodology</h6>
           </div>
           <div class="skillcontent">
             <div class="skillmeter75"></div>
-            <h6>UI / UX Design</h6>
+            <h6>Wireframing &amp; Prototyping</h6>
           </div>
           <div class="skillcontent">
             <div class="skillmeter50"></div>
@@ -167,11 +173,15 @@
           </div>
           <div class="skillcontent">
             <div class="skillmeter75"></div>
-            <h6>Prototyping</h6>
+            <h6>UI / UX Design</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter100"></div>
+            <h6>Packaging &amp;<br />Mass Production</h6>
           </div>
           <div class="skillcontent">
             <div class="skillmeter90"></div>
-            <h6>Packaging</h6>
+            <h6>Brand</h6>
           </div>
         </div>
         <hr class="spacer" />
@@ -272,6 +282,11 @@
         <h4>Projects · Work Experience · Case Studies</h4>
         <hr class="rounded" />
 
+        <!-- todo
+        - responsive grid to portfolio
+        - darken and view text overlay
+        - or portfolio layout to model to https://www.emilantz.com/ -->
+
         <div class="portfoliocontainer">
           <div class="imagecontentlink">
             <img src="img/slideimg-buddy-500.png" alt="IoT Baby Monitor" />
@@ -287,76 +302,6 @@
           </div>
         </div>
       </section>
-
-      <!-- todo
-        - responsive grid to portfolio
-        - darken and view text overlay
-        - or portfolio layout to model to https://www.emilantz.com/ -->
-
-      <!-- <ul>
-        <li>
-          <img
-            src="img/slideimg-buddy-500.png"
-            alt="Buddy - IoT Concept Product"
-            loading="lazy"
-          />
-        </li>
-        <li>
-          <img
-            src="img/slideimg-beautyethics-500.png"
-            alt="Product Packaging Design"
-            loading="lazy"
-          />
-        </li>
-        <li>
-          <img
-            src="img/slideimg-pard-1022x500.png"
-            alt="Label Manufacturing"
-            loading="lazy"
-          />
-        </li>
-      </ul>
-
-      <div class="slideimagecontainer">
-        <div class="slidecontainer">
-          <img
-            src="img/slideimg-buddy-500.png"
-            alt="Buddy Concept Product"
-            class="oneslideimage"
-          />
-          <div class="transoverlay">
-            <div class="slidetext"><h4>Buddy IoT Product</h4></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slideimagecontainer">
-        <div class="slidecontainer">
-          <img
-            src="img/slideimg-beautyethics-500.png"
-            alt="Product Packaging Design"
-            class="oneslideimage"
-          />
-          <div class="transoverlay">
-            <div class="slidetext"><h4>Product Design</h4></div>
-          </div>
-        </div>
-      </div>
-
-      <div class="slideimagecontainer">
-        <div class="slidecontainer">
-          <img
-            src="img/slideimg-pard-1022x500.png"
-            alt="Embellished Labels"
-            class="oneslideimage"
-          />
-          <div class="transoverlay">
-            <div class="slidetext">
-              <h4>Embellished Self-Adhesive Labels</h4>
-            </div>
-          </div>
-        </div>
-      </div> -->
 
       <div class="portfoliocontainer">
         <div class="portfolioimage">IMAGE</div>

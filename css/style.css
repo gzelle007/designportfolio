@@ -32,6 +32,7 @@ h1 {
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 3.5em;
   font-weight: 600;
+  line-height: 1em;
   text-shadow: 0px 4px 4px #333;
 }
 
@@ -87,7 +88,7 @@ p {
 
 hr.rounded {
   border-top: 2px solid #007fff;
-  margin: 25px auto 40px;
+  margin: 25px auto 10px;
   width: 10%;
   border-radius: 1px;
 }
@@ -108,7 +109,8 @@ a:visited {
 }
 
 a.btn {
-  font-size: 1.2em;
+  font-size: 1.2em; /* 20% larger than the base font */
+  text-align: center;
   text-decoration: none;
   color: #fff;
   background-color: rgba(0, 0, 0, 0.25);
@@ -116,57 +118,42 @@ a.btn {
   border-radius: 50px;
   padding: 10px 30px;
   margin: 20px;
-  transition: background-color 0.5s;
+  transition: background-color 0.5s; /* delays the a.btn:hover color change to make an animation */
 }
 a.btn:hover {
   background-color: rgba(255, 127, 0, 0.9);
 }
 
-/* ------------ HEADER ------------ */
+/* ------------ HERO COVER IMAGE ------------ */
 
-/* Background: color, image, repeat properties, position properties */
-header.index {
-  height: 575px;
-  /* Background: color, image, repeat properties, position properties */
-  background: #333 url(../img/designer-on-mac.png);
-  background-repeat: no-repeat;
-  background-size: 100%;
-  background-attachment: fixed;
-}
-
-header.contactus {
-  height: 430px;
-  background: #333 url(../img/designer-on-mac.png) no-repeat center bottom;
-  position: relative;
-}
-
-header a.logo {
-  z-index: 1; /* changes the stacking order to 1 - usually default is 0 */
-  position: absolute;
-  display: block;
-  width: 160px;
-  height: 40px;
-  background: url(../img/logo-mylegend-w160.svg) no-repeat 0 0;
-  background-size: contain; /* background will contain within the height and width */
-  top: 15px;
-  left: 20px;
-}
-
-header a.logo span {
-  display: none;
-}
-
-header div.hero {
-  position: absolute;
-  width: 100%;
-  top: 220px;
-}
-
-header div.hero h1 {
+.cover-image {
+  background-image: url("../img/designer-on-mac.png"); /* Replace the URL with your image */
+  background-size: cover;
+  background-position: center;
+  height: 768px; /* Adjust the initial height as needed */
+  transition: height 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  line-height: 1em;
-  margin: 0 0 30px 0;
-  color: #fff;
+  color: white;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.content {
+  text-align: justify;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .cover-image {
+    height: 200px; /* Adjust the height for smaller screens */
+  }
 }
 
 /* Rotating hero */
@@ -233,25 +220,12 @@ header div.hero h1 {
 }
 
 #quick-links {
-  text-align: center;
   padding: 25px;
 }
 
 /* ------------ SECTION - ALL ------------ */
 
-section {
-  padding: 0 30px;
-} /* moves content 30px within page */
-section::after {
-  content: "";
-  display: block;
-  clear: both;
-}
-/* 2x :: signifies pseudo element, not necessary but used so you can visually see that it a pseudo element not a pseudo class*/
-
-/* ------------ PAGE - INDEX SUMMARY ------------ */
-
-/* GREY SECTION CONTAINER */
+/* ------------ GREY SECTION CONTAINER ------------ */
 
 section.greycontainer {
   background-color: #333;
@@ -262,149 +236,136 @@ section.greycontainer {
   height: 600;
 }
 
-/* Single Column */
-.oneColumn {
-  text-align: center;
-  padding: 0 30% 50px;
+/* ------------ WHITE SECTION CONTAINER ------------ */
+
+section.whitecontainer {
+  margin-top: 90px;
+  margin-bottom: 100px;
+  color: #333;
 }
 
-.imgcontainer {
+/* ------------ BLUE SECTION CONTAINER ------------ */
+
+section.contact {
+  background-color: #007fff;
+  padding-top: 90px;
+  padding-bottom: 100px;
+  /* clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%); */
+}
+
+/* ------------ COLUMNS FLEX LAYOUT ------------ */
+
+/* ------------ SINGLE COLUMNS FLEX LAYOUT ------------ */
+
+.singlecontainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.onecolumncontainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  padding: 20px;
+  /* width: 80%; */
   max-width: 800px;
+  border-radius: 10px;
+}
+
+.onecolcontent {
+  text-align: center;
+  padding: 20px;
+}
+
+/* ------------ DOUBLE COLUMNS FLEX LAYOUT ------------ */
+.doublecontainer {
+  margin: 0;
+  padding: 0;
+}
+
+.twocolcontainer {
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
 }
 
-.image-section {
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+}
+
+.grid-item {
+  background-color: #ccc;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item-portfolio {
+  background-color: #ccc;
+  padding: 30px;
+  height: 850px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ------------ TRIPLE COLUMNS FLEX LAYOUT ------------ */
+.triplecontainer {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.threecolcontainer {
+  max-width: 1200px;
+  padding: 20px;
+}
+
+.threerow {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -10px;
+}
+
+.threecolumn {
+  flex: 1;
+  padding: 0 10px;
+  box-sizing: border-box;
   text-align: center;
 }
 
-.image-section img {
+.threecolumn img {
   max-width: 100%;
   height: auto;
 }
 
-.imgrotation {
-  transform: rotate(40deg) skew(-20deg, -25deg);
-}
-
-/* Responsive Styles */
-@media screen and (max-width: 768px) {
-  .container {
-    max-width: 90%;
+@media (max-width: 768px) {
+  .threecolumn {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
   }
 }
 
-/* 3 column flex box */
-* {
-  box-sizing: border-box;
-}
+/* ------------ PAGE - INDEX SUMMARY ------------ */
 
-/* .column3s {
-  border: 3px solid red;
-} */
-
-.threeColumns {
-  display: flex;
-  flex-wrap: wrap;
-  @media (min-width: 600px) {
-    margin: -10px;
-  }
-
-  > div {
-    padding: 1.5rem;
-    flex-basis: 100%;
-    @media (min-width: 600px) {
-      margin: 10px;
-      flex-basis: calc(33.333% - 20px);
-    }
-  }
-
-  /* fixme */
-  /* fix display to be flex and responsive */
-
-  /* Portfolio Image Display Layout*/
-
-  /* Portfolio Flex Grid Display */
-
-  /* Portfolio Overlay Animation */
-
-  .slideimagecontainer {
-    position: relative;
-    display: inline-block;
-    /* width: 50%; */
-  }
-
-  .oneslideimage {
-    display: inline-block;
-    /* width: 100%; */
-    height: auto;
-  }
-
-  .transoverlay {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    /* height: 100%; */
-    /* width: 100%; */
-    opacity: 0;
-    transition: 1s ease;
-    background-color: #333333;
-  }
-
-  .slideimagecontainer:hover .transoverlay {
-    opacity: 0.9;
-  }
-
-  .slidetext {
-    color: #007fff;
-    font-size: 20px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-
-  .spacer {
-    padding-bottom: 100px;
-  }
-
-  .twoColumns {
-    display: grid;
-    border: 2px solid red;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  /* columns */
-  .twoColumns > * {
-    padding: 1rem;
-  }
-
-  /* media query for less than 600px wide */
-  /* > div + div {
-    @media (max-width: 599px) {
-      margin-top: 20px;      
-    }
-  } */
-}
-
-/* Image icon */
-.icon {
-  width: auto;
-  text-align: center;
-  padding: 50px;
-}
-img {
-  max-width: 40%;
-  max-height: 40%;
-}
-
-.iconcolor {
-  filter: opacity(85%);
+/* IMAGE ATTRIBUTES */
+.iconattributes {
+  filter: opacity(90%);
+  width: 40%;
 }
 
 /* ------------ SKILLS SECTION ------------ */
@@ -419,6 +380,7 @@ img {
 .skillcontent {
   width: 200px;
   color: #777;
+  /* text-align: center; */
 }
 
 /* % Rating 10, 25, 35, 50, 75, 90, 100 */
@@ -517,211 +479,7 @@ img {
   box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
 }
 
-/* ------------ SECTION - ABOUT ------------ */
-
-section.about {
-  background-color: #333;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  clip-path: polygon(0 0, 100% 0%, 100% 90%, 50% 100%, 0 90%);
-  height: 600;
-}
-
-section.about article aside {
-  width: 45%;
-  float: left;
-  padding: 0px 2.5%;
-}
-
-/* ------------ WHITE SECTION CONTAINER ------------ */
-
-section.whitecontainer {
-  margin-top: 90px;
-  margin-bottom: 100px;
-  color: #333;
-}
-
-/* divides the aside content to 33% of the page */
-section.whitecontainer aside {
-  width: 30%;
-  float: left;
-  text-align: center;
-  padding: 10px;
-}
-
-section.whitecontainer .content {
-  margin: 15px;
-  background: no-repeat center top; /* no repeat, x-position, y-position */
-  background-size: 75px 75px;
-  padding-top: 85px;
-  min-height: 100px;
-}
-
-section.whitecontainer aside img {
-  padding: 20px 20px 5px;
-  display: inline-block;
-  width: 35%;
-}
-
-/* Portfolio Image Display */
-
-/* ------------ PAGE - CONTACT ------------ */
-
-section.where {
-  color: #333;
-  padding-top: 50px;
-  padding-bottom: 100px;
-  height: 600;
-}
-
-section.where article aside {
-  width: 45%;
-  float: left;
-  padding: 0px 2.5%;
-}
-
-section.contact {
-  background-color: #007fff;
-  padding-top: 90px;
-  padding-bottom: 100px;
-  /* clip-path: polygon(50% 0, 100% 10%, 100% 100%, 0 100%, 0 10%); */
-}
-
-section.contact .content-contact-blurb {
-  text-align: center;
-}
-
-section.contact .form {
-  text-align: center;
-}
-section.contact .form .form-input {
-  padding: 10px;
-  margin: 2px 0;
-  font-family: "Open Sans", sans-serif;
-}
-
-section.contact input {
-  width: 70%;
-  justify-content: center;
-}
-
-section.contact .message {
-  width: 70%;
-  margin: 2px 0;
-  font-family: "Open Sans", sans-serif;
-  padding: 10px;
-}
-
-section.contact .querybtn {
-  background-color: #333;
-  color: #fff;
-  width: 72%;
-  padding: 15px 0 5px 0;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-/* ------------ PAGE - PROJECTS ------------ */
-
-/* BUDDY */
-
-/* HERO */
-header.buddy {
-  height: 475px;
-  background: #333 url(../img/logo-buddy.svg) no-repeat center bottom;
-  position: relative;
-}
-
-/* TABLE */
-
-/* Border Box */
-
-.summarytable {
-  position: relative;
-  /* width: 35%; */
-  padding: 30px;
-  justify-content: center;
-  margin-top: 24px;
-  display: flex;
-  border-radius: 25px;
-  background-color: #f2f2f2;
-  box-shadow: inset 0 -1px 1px rgba(120, 120, 120, 0.5);
-}
-
-.rowheader {
-  font-family: "Montserrat", "Open Sans", sans-serif;
-  text-transform: uppercase;
-  font-weight: bolder;
-  float: left;
-  width: 150px;
-  /* border: 1px solid green; */
-}
-
-.rowcontent {
-  /* border: 1px solid yellow; */
-  /* width: 300px; */
-  color: #adadad;
-}
-
-/* .skillcontent {
-width: 200px;
-color: #777;
-} */
-
-/* .skillstable {
-  position: relative;
-  width: 40%;
-  height: auto;
-  padding: 2%;
-  border: 3px solid #f2f2f2;
-} */
-
-/* Skills Rows */
-.rowonecolone {
-  border: 2px solid #ff7f00;
-  width: 34%;
-  height: auto;
-  position: absolute;
-  left: 3%;
-  top: 3%;
-}
-
-.rowonecoltwo {
-  border: 2px solid #ff7f00;
-  width: 55%;
-  height: auto;
-  position: absolute;
-  right: 3%;
-}
-
-.rowtwocolone {
-  border: 2px solid #ff7f00;
-}
-
-/* ------------ 2 Column Grid------------ */
-
-.container {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-}
-
-.grid-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-gap: 20px;
-}
-
-.grid-item {
-  padding: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
-/* ------------ NAVIGATION ------------ */
+/* ------------ MENU NAVIGATION ------------ */
 
 .p-menu1 {
   height: 250px;
@@ -831,15 +589,16 @@ color: #777;
 }
 
 /* ------------ FOOTER ------------ */
+
+header,
 footer {
   font-size: 0.8em;
-  text-align: center;
-  margin: 40px;
   color: #333;
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
 }
-footer .content {
-  display: inline;
-}
+
 footer a {
   padding: 30px;
   color: #333;
@@ -849,14 +608,6 @@ footer a:visited {
 }
 footer a:hover {
   color: #ff7f00;
-}
-
-/* ------------ REACT TIME DISPLAY ------------ */
-.timedisplay {
-  margin: 0;
-  text-align: center;
-  background-color: #333;
-  padding: 1px;
 }
 
 /* *:not(path):not(g) {

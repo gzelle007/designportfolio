@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta Descriptions -->
+    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Gizelle is a graphic designer, who thrives in the creative process. She brings ideas to life by designing captivating visuals for print, web design, and digital platforms, often incorporating coding skills to craft engaging interactive experiences."
+    />
+    <title>MyLegend</title>
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/style.css"
+    />
+    <!-- media attribute can be screen or all to include your design in printing page -->
+
+    <!-- React Script source that makes react work on your website -->
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"
+    ></script>
+    <script
+      type="application/javascript"
+      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
+    ></script>
+  </head>
+  <body>
+    <!-- id only use once -->
+    <div id="page">
+      <header class="cover-image">
+        <!-- span = inline element like anchor tag, extra character on the element-->
+        <a class="logo" title="MyLegend" href="index.html"
+          ><span>MyLegend</span></a
+        >
+
+        <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
+        <div class="hero">
+          <!-- Create a roll to change design to conceptualize, curate, create, code-->
+          <!-- <h1>
+            I <span class="text-rotator">design</span> <br />
+            brands &amp; products
+          </h1> -->
+
+          <div id="hero-container">
+            <h1>
+              <div>Gizelle Alarcon</div>
+              <div id="flip">
+                <div><div>codes</div></div>
+                <div><div>creates</div></div>
+                <div><div>collaborates</div></div>
+              </div>
+              <div>with your brand.</div>
+            </h1>
+          </div>
+
+          <!-- Quick buttons -->
+          <div id="quick-links">
+            <a class="btn" title="Resume" href="contact.html#contact"
+              ><span> Download CV</span></a
+            >
+            <a class="btn" title="Projects" href="portfolio.html"
+              ><span> View Projects</span></a
+            >
+          </div>
+        </div>
+
+        <!-- Navigation Hamburger Menu -->
+        <section class="p-menu1">
+          <nav id="navbar" class="navigation" role="navigation">
+            <input id="toggle1" type="checkbox" />
+            <label class="hamburger1" for="toggle1">
+              <div class="top"></div>
+              <div class="meat"></div>
+              <div class="bottom"></div>
+            </label>
+
+            <nav class="menu1">
+              <a class="link1" href="index.html">Home</a>
+              <a class="link1" href="portfolio.html">Portfolio</a>
+              <a class="link1" href="contact.html">Contact</a>
+            </nav>
+          </nav>
+        </section>
+      </header>
+
+      <section class="greycontainer">
+        <div class="singlecontainer">
+          <div class="onecolumncontainer">
+            <div>
+              <h2>Designer for Hire</h2>
+              <h4>Curiously Creative</h4>
+              <hr class="rounded" />
+            </div>
+            <div class="onecolcontent">
+              <p>
+                I engage in the creative process of conceptualizing, designing,
+                and producing visual content for different mediums such as
+                print, web design, and digital platforms. This often entails
+                incorporating elements of coding to create interactive
+                experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="whitecontainer">
+        <div class="singlecontainer">
+          <div class="onecolumncontainer">
+            <div>
+              <h2>Services</h2>
+              <h4>Strategy · Design · Solution</h4>
+              <hr class="rounded" />
+            </div>
+            <div class="onecolcontent">
+              <p>
+                Crafting strategic design solutions entails meticulous planning
+                and innovative thinking. By collaborating closely with clients,
+                tailored designs are developed from concept to execution,
+                ensuring alignment with objectives and resonance with target
+                audiences. This collaborative approach enables the realization
+                of visionary ideas and the elevation of brands to new heights of
+                success.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="triplecontainer">
+          <div class="threecolcontainer">
+            <div class="threerow">
+              <div class="threecolumn">
+                <img
+                  class="iconattributes"
+                  src="img/icon-web-design.svg"
+                  alt="Design"
+                />
+                <h4>Design</h4>
+                <p>
+                  Elevate your brand with captivating designs crafted by a
+                  passionate graphic artist. From logos to illustrations, I
+                  bring creativity and precision to every project. Let's make
+                  your vision stand out in today's market.
+                </p>
+              </div>
+              <div class="threecolumn">
+                <img
+                  class="iconattributes"
+                  src="img/icon-print.svg"
+                  alt="Print"
+                />
+                <h4>Print</h4>
+                <p>
+                  Transform your visions with large-format printing and
+                  packaging. Enhance your brand with premium prints and tailored
+                  packaging solutions. Experience the power of captivating
+                  visuals and boost your sales.
+                </p>
+              </div>
+              <div class="threecolumn">
+                <img
+                  class="iconattributes"
+                  src="img/icon-responsive.svg"
+                  alt="Digital"
+                />
+                <h4>Digital</h4>
+                <p>
+                  Experience a dynamic website with optimized code designed to
+                  drive sales. Meticulous UX and UI design will offer a seamless
+                  user experience, leading to increased engagement and
+                  conversions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+
+      <section class="greycontainer">
+        <h2>Skills</h2>
+        <hr class="rounded" />
+
+        <hr class="spacer" />
+
+        <h4>Graphic Design Concepts</h4>
+        <div class="skillcontainer">
+          <div class="skillcontent">
+            <div class="skillmeter90"></div>
+            <h6>Development &amp; Methodology</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>Wireframing &amp; Prototyping</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter50"></div>
+            <h6>Webflow</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>UI / UX Design</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter100"></div>
+            <h6>Packaging &amp;<br />Mass Production</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter90"></div>
+            <h6>Brand</h6>
+          </div>
+        </div>
+        <hr class="spacer" />
+
+        <h4>Coding Languages</h4>
+        <div class="skillcontainer">
+          <div class="skillcontent">
+            <div class="skillmeter100"></div>
+            <h6>HTML</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>CSS</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter25"></div>
+            <h6>Javascript</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter25"></div>
+            <h6>Python</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter35"></div>
+            <h6>React</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter10"></div>
+            <h6>C#</h6>
+          </div>
+        </div>
+        <hr class="spacer" />
+
+        <h4>Design Programs</h4>
+        <div class="skillcontainer">
+          <div class="skillcontent">
+            <div class="skillmeter90"></div>
+            <h6>Figma</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter100"></div>
+            <h6>Adobe XD</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter100"></div>
+            <h6>Adobe Illustrator</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>Adobe InDesign</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>Adobe Photoshop</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>CERM / ESKO</h6>
+          </div>
+        </div>
+        <hr class="spacer" />
+
+        <h4>Administration</h4>
+        <div class="skillcontainer">
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>Visual Studio Code</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter75"></div>
+            <h6>GitHub</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter35"></div>
+            <h6>Microsoft SQL Server</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter90"></div>
+            <h6>Microsoft 365</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter50"></div>
+            <h6>OS Terminal</h6>
+          </div>
+          <div class="skillcontent">
+            <div class="skillmeter25"></div>
+            <h6>Penetration Testing</h6>
+          </div>
+        </div>
+
+        <hr class="spacer" />
+
+        <!-- todo - view skills to model https://www.pascalstrasche.com/ -->
+      </section>
+
+      <section class="whitecontainer">
+        <div class="singlecontainer">
+          <div class="onecolumncontainer">
+            <div>
+              <h2>Portfolio</h2>
+              <h4>Projects · Work Experience · Case Studies</h4>
+              <hr class="rounded" />
+            </div>
+            <div class="onecolcontent"></div>
+          </div>
+        </div>
+
+        <div class="doublecontainer">
+          <div class="twocolcontainer">
+            <div class="grid-container">
+              <div class="grid-item-portfolio">
+                <img src="img/slideimg-buddy-500.png" alt="Buddy Smart App" />
+                <h5>Buddy Baby Monitor</h5>
+                <h6>
+                  Insight & Development | Prototyping | Product Design |
+                  Branding | UI/UX | Testing | Web Design | Market Evaluation &
+                  Methodology | Kanban Development | App Design
+                </h6>
+                <br />
+                <p>
+                  I invented Buddy Smart Baby Device to solve challenges and
+                  optimise daily routines seamlessly. In a connected world, IoT
+                  applications streamline tasks, boost efficiency, and redefine
+                  daily life to unlock convenience, control and innovate home
+                  automation and revolutionize healthcare.
+                </p>
+              </div>
+              <div class="grid-item-portfolio">
+                <img
+                  src="img/slideimg-beautyethics-500.png"
+                  alt="Beauty Ethics"
+                />
+                <h5>Beauty Ethics Skincare Range</h5>
+                <h6>
+                  Insight & Development | Product Design | Branding | Packaging
+                  Design | Prototyping | Concept Presentation | Print
+                </h6>
+                <br />
+                <p>
+                  Designing packaging for Beauty Ethics, a New Zealand-based
+                  skincare brand, is a journey in crafting elegance and
+                  sustainability. The mission to encapsulate the essence of
+                  nature's purity while ensuring ethical practices in every
+                  step. The packaging solutions echo the brand's commitment to
+                  holistic beauty, fostering a sense of luxury and
+                  responsibility. Beauty Ethics packaging tells a story of
+                  authenticity and care.
+                </p>
+              </div>
+              <div class="grid-item-portfolio">
+                <img src="img/slideimg-pard-500.png" alt="Prepress" />
+                <h5>Self Adhesive Labels</h5>
+                <h6>
+                  Design Brief Interpretation | Graphic Design | Modulation &
+                  Automation | Digital & Offset Printing | CTP Maintanance |
+                  Plate Sourcing & Manufacturing | High Build | Foiling |
+                  Embossing | Mass Production Coordination
+                </h6>
+                <br />
+                <p>
+                  Responsible for ensuring that designs seamlessly transition
+                  from concept to production, prepress play a vital role in
+                  maintaining quality and efficiency. Meticulously preparing
+                  digital files to collaborating closely with designers and
+                  press operators, every label met the highest standards. A keen
+                  eye for detail is integral to delivering excellence and
+                  delivering exceptional results.
+                </p>
+              </div>
+              <div class="grid-item-portfolio">
+                <img src="img/slideimg-cubgrp-500.jpg" alt="Stationery" />
+                <h5>Cube Group</h5>
+                <h6>
+                  Design Brief Interpretation | Logo Refinement | Info Graphic |
+                  Collateral Design
+                </h6>
+                <br />
+                <p>
+                  I refined the Cube Group logo and created collateral for this
+                  start-up construction businesses. I work closely with the
+                  owner to capture their brand essence and extend it across all
+                  materials, from business cards to company policy and procedure
+                  manuscript.
+                </p>
+              </div>
+              <div class="grid-item-portfolio">
+                <img src="img/slideimg-divedr-500.png" alt="Dive Doctors" />
+                <h5>Dive Doctors</h5>
+                <h6>Logo Design | Branding</h6>
+                <br />
+                <p>
+                  I had the pleasure of crafting a distinctive logo for Dive
+                  Doctors, a premier dive shop based in New Zealand. By blending
+                  elements of adventure, professionalism, and marine life, we
+                  created a logo that not only represents the brand's commitment
+                  to excellence but also resonates with diving enthusiasts. Dive
+                  Doctors now stands out with a unique visual identity that
+                  captures the spirit of exploration beneath the waves.
+                </p>
+              </div>
+
+              <!-- Add more grid items as needed -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Code a usable contact section -->
+      <section class="contact">
+        <div class="singlecontainer">
+          <div class="onecolumncontainer">
+            <div>
+              <h2>Get in Touch</h2>
+              <hr class="rounded" />
+            </div>
+            <div class="onecolcontent">
+              <p>
+                Ready to make an impact with your brand? Let's discuss a
+                strategy together. Get in touch for a no obligation
+                consultation.
+              </p>
+            </div>
+            <div>
+              <a class="btn" title="Collaborate" href="contact.html#contact">
+                Let's Collaborate
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <p>
+          &copy; Copyright 2020 -
+          <script type="text/javascript">
+            document.write(new Date().getFullYear());
+          </script>
+          | <strong>Gizelle Alarcon</strong> | All Rights Reserved
+        </p>
+        <!-- todo - Create Privacy Policy and Terms of Service info
+        - Perhaps a overlay hover or popup? -->
+        <div class="content">
+          <a title="Privacy Policy" href="about.html#privacypolicy"
+            >Privacy Policy</a
+          >
+          <a title="Terms of Service" href="about.html#termsofuse"
+            >Terms of Service</a
+          >
+        </div>
+      </footer>
+      <div class="timedisplay"></div>
+    </div>
+
+    <script type="text/babel">
+      function tick() {
+        const element = (
+          <div>
+            <h6>Time: {new Date().toLocaleTimeString()}</h6>
+          </div>
+        );
+
+        ReactDOM.render(element, document.querySelector(".timedisplay"));
+      }
+
+      setInterval(tick, 1000);
+    </script>
+  </body>
+</html>
