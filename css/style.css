@@ -124,6 +124,14 @@ a.btn:hover {
   background-color: rgba(255, 127, 0, 0.9);
 }
 
+#contactbtn {
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  bottom: 200px;
+  width: 200px;
+}
+
 /* ------------ HERO COVER IMAGE ------------ */
 
 .cover-image {
@@ -309,9 +317,10 @@ section.contact {
 .grid-item-portfolio {
   background-color: #ccc;
   padding: 30px;
-  height: 850px;
+  height: auto;
   border-radius: 5px;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  filter: drop-shadow(1px 1px 3px #141414);
 }
 
 @media screen and (max-width: 768px) {
@@ -546,7 +555,10 @@ section.contact {
 /*  Menu */
 .menu1 {
   width: 200px;
-  background-color: #f2f2f2;
+  background-color: #fff;
+  position: fixed;
+  top: 5px;
+  right: 25px;
   margin: 0;
   display: -ms-grid;
   display: grid;
@@ -559,10 +571,11 @@ section.contact {
   text-align: center;
   height: 0px;
   overflow: hidden;
-  transition: height 0.4s ease;
   z-index: 120;
-  -webkit-transition: all 0.3s ease;
+  filter: drop-shadow(1px 1px 5px #141414);
+  -webkit-transition: all 0.5s ease;
   transition: all 0.3s ease;
+  z-index: 100;
 }
 
 .menu1 a:first-child {
@@ -577,15 +590,16 @@ section.contact {
   width: 100%;
   margin: 0;
   padding: 10px 0;
+  font-size: 1.5em;
 }
 
 .link1:hover {
   /* background-color: #ff7f00; */
-  color: #ff7f00;
+  color: #007fff;
   font-weight: bold;
-  font-size: 1.1em;
-  /* -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; */
+  font-size: 1.8em;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 
 /* ------------ FOOTER ------------ */
