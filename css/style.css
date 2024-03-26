@@ -66,7 +66,7 @@ h4 {
 }
 
 h5 {
-  margin: 0 0 0.5em 0; /* em used to give device leaway based on individual devices */
+  margin: 0 0 0.5em 0;
   font-family: "Montserrat", "Open Sans", sans-serif;
   font-size: 2em;
   font-weight: normal;
@@ -108,8 +108,8 @@ a:visited {
   text-decoration: none;
 }
 
-a.btn {
-  font-size: 1.2em; /* 20% larger than the base font */
+a.button {
+  font-size: 1.2em;
   text-align: center;
   text-decoration: none;
   color: #fff;
@@ -118,13 +118,13 @@ a.btn {
   border-radius: 50px;
   padding: 10px 30px;
   margin: 20px;
-  transition: background-color 0.5s; /* delays the a.btn:hover color change to make an animation */
+  transition: background-color 0.5s;
 }
-a.btn:hover {
+a.button:hover {
   background-color: rgba(0, 206, 209, 0.9);
 }
 
-#contactbtn {
+#contact-button {
   position: absolute;
   left: 50%;
   margin-left: -100px;
@@ -362,7 +362,7 @@ section.contact {
 
 /* ------------ SKILLS SECTION ------------ */
 
-.skillcontainer {
+.container6 {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -371,7 +371,7 @@ section.contact {
   display: flex;
 }
 
-.skillcontent {
+.container-col6 {
   width: 200px;
   color: #777;
   text-align: center;
