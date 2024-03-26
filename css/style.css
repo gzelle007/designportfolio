@@ -124,6 +124,10 @@ a.button:hover {
   background-color: rgba(0, 206, 209, 0.9);
 }
 
+#quick-links {
+  padding: 25px;
+}
+
 #contact-button {
   position: absolute;
   left: 50%;
@@ -145,13 +149,6 @@ a.button:hover {
   justify-content: center;
   text-align: center;
   color: white;
-}
-
-/* Media Query for smaller screens */
-@media screen and (max-width: 600px) {
-  .cover-image {
-    height: 200px; /* Adjust the height for smaller screens */
-  }
 }
 
 /* Rotating hero */
@@ -215,10 +212,6 @@ a.button:hover {
   100% {
     margin-top: -270px;
   }
-}
-
-#quick-links {
-  padding: 25px;
 }
 
 /* ------------ SECTION - ALL ------------ */
@@ -306,12 +299,6 @@ section.contact {
   filter: drop-shadow(1px 1px 3px #141414);
 }
 
-@media screen and (max-width: 768px) {
-  .grid-container {
-    grid-template-columns: 1fr;
-  }
-}
-
 /* ------------ TRIPLE COLUMNS FLEX LAYOUT ------------ */
 .container3 {
   margin: 0;
@@ -343,13 +330,6 @@ section.contact {
 .grid-item-icons img {
   max-width: 100%;
   height: auto;
-}
-
-@media (max-width: 768px) {
-  .threecolumn {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
-  }
 }
 
 /* ------------ PAGE - INDEX SUMMARY ------------ */
@@ -425,12 +405,6 @@ section.contact {
     rgba(112, 112, 112, 1) 22%
   );
 }
-
-/* @media screen and (max-width: 768px) {
-  .skillcontainer {
-    grid-template-columns: 1fr;
-  }
-} */
 
 /* ------------ MENU NAVIGATION ------------ */
 
@@ -537,6 +511,27 @@ section.contact {
   font-size: 1.8em;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 600px) {
+  .cover-image {
+    height: 650px;
+  }
+
+  .container-col3 {
+    flex: 0 0 100%;
+    margin-bottom: 20px;
+  }
+
+  .container-col6 {
+    grid-template-columns: 2fr;
+  }
+
+  .container-grid2 {
+    grid-template-columns: 1fr;
+    width: 80%;
+  }
 }
 
 /* ------------ FOOTER ------------ */
