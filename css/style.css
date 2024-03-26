@@ -516,21 +516,50 @@ section.contact {
 /* Media Query for phone */
 @media screen and (max-width: 480px) {
   .cover-image {
-    height: 650px;
+    position: relative;
   }
 
+  /* 3 column down to single */
   .container-col3 {
-    flex: 0 0 100%;
-    margin-bottom: 20px;
+    padding: 0;
+    margin: 0;
+    width: 80%;
   }
 
-  .container-col6 {
-    grid-template-columns: 2fr;
+  .grid-item-icons {
+    flex: unset;
+    height: 200px;
+  }
+
+  .icon-blurb {
+    visibility: collapse;
+  }
+
+  /* Skills Section */
+  .container6 {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
+  /* Portfolio Section */
+
+  .portfoliosection {
+    visibility: collapse;
+  }
+
+  .container-col2 {
+    margin: 0;
+    padding: 0;
+    width: 100%;
   }
 
   .container-grid2 {
     grid-template-columns: 1fr;
     width: 80%;
+  }
+
+  .portfolio-blurb {
+    visibility: collapse;
   }
 }
 
