@@ -513,8 +513,8 @@ section.contact {
   transition: all 0.3s ease;
 }
 
-/* Media Query for smaller screens */
-@media screen and (max-width: 600px) {
+/* Media Query for phone */
+@media screen and (max-width: 480px) {
   .cover-image {
     height: 650px;
   }
