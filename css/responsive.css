@@ -149,7 +149,7 @@ a.button:hover {
 /* ------------ HERO COVER IMAGE ------------ */
 
 .cover-image {
-  background-image: url("../img/designer-on-mac.png"); /* Replace the URL with your image */
+  background-image: url("../img/cover-buddy.png"); /* Replace the URL with your image */
   background-size: cover;
   background-position: center;
   height: 768px; /* Adjust the initial height as needed */
@@ -234,6 +234,10 @@ a.button:hover {
 }
 
 /* ------------ SECTION - ALL ------------ */
+
+.image1 {
+  width: 80%;
+}
 
 /* ------------ GREY SECTION CONTAINER ------------ */
 
