@@ -83,7 +83,7 @@ h6 {
 
 p {
   margin: 0;
-  padding: 0 0 50px 0;
+  padding: 20px 50px 50px 50px;
 }
 
 ul {
@@ -143,7 +143,6 @@ a.button:hover {
   position: absolute;
   left: 50%;
   margin-left: -100px;
-  bottom: 200px;
   width: 200px;
 }
 
@@ -282,7 +281,6 @@ section.contact {
   grid-template-columns: 1fr;
   gap: 20px;
   padding: 0;
-  width: 60%;
   max-width: 800px;
   border-radius: 10px;
 }
