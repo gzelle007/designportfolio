@@ -216,6 +216,11 @@ a.button:hover {
 
 /* ------------ SECTION - ALL ------------ */
 
+iframe {
+  width: 100%;
+  height: 300px;
+}
+
 /* ------------ GREY SECTION CONTAINER ------------ */
 
 section.grey-container {
