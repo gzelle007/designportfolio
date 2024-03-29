@@ -513,6 +513,12 @@ section.contact {
   transition: all 0.3s ease;
 }
 
+@media screen and (max-width: 1024px) {
+  .container-grid2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
 /* Media Query for phone */
 @media screen and (max-width: 480px) {
   #page {
@@ -569,16 +575,17 @@ section.contact {
   }
 
   .container-grid2 {
-    grid-template-columns: auto;
-    width: 80%;
-    left: 50%;
+    position: relative;
+    grid-template-columns: repeat(1, 1fr);
+    width: 96%;
+    left: 2%;
   }
 
-  /* .grid-item-portfolio {
-    width: 80%;
-    align-items: center;
-    justify-content: center;
-  } */
+  .grid-item-portfolio {
+    width: 100%;
+    /* align-items: center; */
+    /* justify-content: center; */
+  }
 
   .grid-item-portfolio img {
     width: 100%;
