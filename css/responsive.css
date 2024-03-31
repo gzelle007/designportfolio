@@ -97,6 +97,10 @@ li {
   padding: 5px 0;
 }
 
+.color-white {
+  color: #f2f2f2;
+}
+
 hr.rounded {
   border-top: 2px solid #007fff;
   margin: 25px auto 10px;
@@ -300,6 +304,15 @@ section.contact {
 .hidden-text {
   visibility: collapse;
   display: none;
+}
+
+/* ------------ MEDIA QUERY ------------ */
+
+@media only screen and (min-width: 1024px) {
+  .hidden-text {
+    visibility: unset;
+    display: contents;
+  }
 }
 
 /* ------------ MENU NAVIGATION ------------ */
