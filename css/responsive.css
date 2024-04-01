@@ -127,16 +127,16 @@ a.button {
   font-size: 1.2em;
   text-align: center;
   text-decoration: none;
-  color: #02173f;
-  background-color: rgba(242, 242, 242, 0.9);
-  border: 2px solid #ff7f00;
+  color: #fff;
+  background-color: rgba(0, 127, 255);
+  border: 2px solid #00ced1;
   border-radius: 50px;
   padding: 10px 30px;
-  margin: 20px;
+  margin: 0;
   transition: background-color 0.5s;
 }
 a.button:hover {
-  background-color: rgba(255, 127, 0);
+  background-color: rgba(0, 206, 209);
 }
 
 /* #quick-links {
