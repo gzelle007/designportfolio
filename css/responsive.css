@@ -40,7 +40,7 @@ h2 {
   margin: 0;
   padding: 0.5em;
   font-family: "Montserrat", "Open Sans", sans-serif;
-  font-size: 2.8em;
+  font-size: 2.2em;
   font-weight: bold;
   line-height: 1.1em;
   text-align: center;
@@ -152,8 +152,21 @@ a.button:hover {
 
 /* ------------ HERO COVER IMAGE ------------ */
 
-.cover-image {
+.cover-buddy {
   background-image: url("../img/cover-buddy.png"); /* Replace the URL with your image */
+  background-size: cover;
+  background-position: center;
+  height: 768px; /* Adjust the initial height as needed */
+  transition: height 0.5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+}
+
+.cover-code {
+  background-image: url("../img/cover-coding.png"); /* Replace the URL with your image */
   background-size: cover;
   background-position: center;
   height: 768px; /* Adjust the initial height as needed */
@@ -273,7 +286,7 @@ section.contact {
 
 /* ------------ COLUMNS FLEX LAYOUT ------------ */
 
-/* ------------ SINGLE COLUMNS FLEX LAYOUT ------------ */
+/* ------------ 1 COLUMN FLEX LAYOUT ------------ */
 
 .container1 {
   margin: 0;
@@ -295,6 +308,22 @@ section.contact {
 
 .content-col1 {
   text-align: center;
+}
+
+/* ------------ 5 COLUMNS FLEX LAYOUT ------------ */
+
+.container-multi {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  justify-content: center;
+  margin-top: 24px;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.container-column-multi {
+  padding: 10px;
 }
 
 /* ------------ CONTENT SPECIFIC ------------ */
