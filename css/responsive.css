@@ -150,6 +150,13 @@ a.button:hover {
   width: 200px;
 }
 
+#buddy-figma {
+  position: absolute;
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+}
+
 /* ------------ HERO COVER IMAGE ------------ */
 
 .cover-buddy {
