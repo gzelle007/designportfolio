@@ -232,20 +232,54 @@ h2 { font: 700 clamp(2.5rem, 4.6vw, 4rem)/1.06 var(--font-head); letter-spacing:
   *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; animation-duration: .01ms !important; }
 }
 
-/* Current role case-study covers */
-.art-kidz { background: linear-gradient(135deg, #f3d7ce 0%, #f8eee7 58%, #d7e5df 100%); color: #563e58; }
-.kidz-sheet { position:absolute; inset:14% 10% 13%; background:#fffaf5; border-radius:18px; padding:8% 7%; box-shadow:0 18px 40px #5b43501c; transform:rotate(-3deg); }
-.kidz-sheet .kidz-kicker { font-size:clamp(8px,1vw,12px); letter-spacing:.18em; text-transform:uppercase; color:#9b6c7f; }
-.kidz-sheet strong { display:block; max-width:75%; margin-top:8%; font-family:Manrope,sans-serif; font-size:clamp(22px,4vw,48px); line-height:1.02; letter-spacing:-.06em; }
-.kidz-sheet .kidz-sun { position:absolute; width:24%; aspect-ratio:1; border-radius:50%; right:9%; top:18%; background:#e9a58e; box-shadow:0 0 0 13px #e9a58e35; }
-.kidz-sheet .kidz-line { height:7px; width:56%; margin-top:7%; border-radius:10px; background:#d9c6d4; }
-.kidz-sheet .kidz-line.short { width:38%; margin-top:3%; }
-.art-ktl { background:linear-gradient(135deg,#d9e3fa 0%,#f0effa 55%,#f5d8c8 100%); color:#2b3159; }
-.ktl-sheet { position:absolute; inset:13% 12%; background:#fff; border-radius:8px; padding:8%; box-shadow:0 18px 40px #29345b20; transform:rotate(3deg); }
-.ktl-sheet .ktl-top { display:flex; justify-content:space-between; font-size:clamp(8px,1vw,12px); letter-spacing:.16em; text-transform:uppercase; color:#777da2; }
-.ktl-sheet strong { display:block; margin-top:12%; font-family:Manrope,sans-serif; font-size:clamp(26px,4vw,50px); line-height:.95; letter-spacing:-.07em; }
-.ktl-sheet .ktl-highlight { display:inline-block; margin-top:8%; padding:8px 12px; background:#f2c5aa; border-radius:30px; font-size:clamp(8px,1vw,12px); font-weight:700; }
-.ktl-sheet .ktl-bars { display:flex; gap:5px; align-items:end; height:18%; margin-top:8%; }
-.ktl-sheet .ktl-bars i { display:block; width:12%; border-radius:5px 5px 0 0; background:#aab7e1; }
-.ktl-sheet .ktl-bars i:nth-child(1){height:45%}.ktl-sheet .ktl-bars i:nth-child(2){height:72%}.ktl-sheet .ktl-bars i:nth-child(3){height:58%}.ktl-sheet .ktl-bars i:nth-child(4){height:100%}
-.project-card[ data-project ] { cursor:pointer; }
+/* IMAGE MOSAIC — EDITABLE PROJECT VISUALS */
+.project-grid { display:grid; grid-template-columns:repeat(12,minmax(0,1fr)); grid-template-rows:repeat(2,clamp(195px,20vw,330px)); gap:14px; align-items:stretch; }
+.project-card { position:relative; min-width:0; min-height:0; overflow:hidden; background:#e9e3df; }
+.project-card[hidden] { display:none!important; }
+.project-buddy { grid-column:span 5; grid-row:span 2; }
+.project-beauty { grid-column:span 3; }
+.project-dive { grid-column:span 4; }
+.project-prepress { grid-column:span 2; }
+.project-cube { grid-column:span 2; }
+.project-code { grid-column:span 3; }
+.project-kidz,.project-ktl { grid-column:span 6; min-height:300px; }
+.project-signwriting,.project-hotels { grid-column:span 6; min-height:300px; }
+.project-open { position:relative; width:100%; height:100%; display:block; padding:0; border:0; cursor:pointer; background:#e9e3df; color:white; text-align:left; overflow:hidden; }
+.project-image { width:100%; height:100%; object-fit:cover; display:block; transition:transform .6s cubic-bezier(.2,.7,.2,1); }
+.project-card:hover .project-image,.project-open:focus-visible .project-image { transform:scale(1.045); }
+.project-image-shade { position:absolute; inset:0; background:linear-gradient(0deg,rgba(24,19,30,.78) 0%,rgba(24,19,30,.18) 29%,transparent 62%); pointer-events:none; }
+.project-tile-copy { position:absolute; bottom:20px; left:20px; right:48px; display:grid; gap:5px; text-shadow:0 1px 10px #0006; }
+.project-tile-copy strong { font:800 clamp(17px,1.55vw,27px)/1.1 var(--font-head); letter-spacing:-.045em; }
+.project-tile-copy small { font:600 clamp(10px,.78vw,12px)/1.3 var(--font-body); letter-spacing:.04em; }
+.project-tile-arrow { position:absolute; right:19px; bottom:24px; font-size:24px; font-weight:400; transition:transform .2s; }
+.project-card:hover .project-tile-arrow { transform:translate(3px,-3px); }
+.project-external { position:absolute; right:13px; top:13px; display:flex; gap:7px; z-index:3; }
+.social-icon { display:inline-grid; place-items:center; width:34px; height:34px; border-radius:50%; color:#312943; background:#fffdf9e8; box-shadow:0 2px 12px #0002; transition:background .2s,transform .2s; }
+.social-icon:hover,.social-icon:focus-visible { background:#fff; transform:translateY(-2px); }
+.social-icon svg { width:17px; height:17px; }
+.dialog-links { display:flex; gap:9px; margin-top:20px; }
+.dialog-links .social-icon { background:#e9e2ed; }
+.project-dialog .dialog-hint { display:none; }
+.portfolio-note { max-width:740px; margin-top:24px; line-height:1.6; font-size:12px; color:var(--muted); }
+.project-open:focus-visible,.social-icon:focus-visible { outline:3px solid var(--coral); outline-offset:-3px; }
+@media (max-width:1050px) {
+  .project-grid { grid-template-columns:repeat(6,minmax(0,1fr)); grid-template-rows:none; grid-auto-rows:250px; }
+  .project-buddy { grid-column:span 3; grid-row:span 2; }
+  .project-beauty,.project-dive,.project-prepress,.project-cube,.project-code { grid-column:span 3; }
+  .project-kidz,.project-ktl,.project-signwriting,.project-hotels { grid-column:span 3; min-height:0; }
+}
+@media (max-width:640px) {
+  .project-grid { grid-template-columns:repeat(2,minmax(0,1fr)); grid-auto-rows:225px; gap:10px; }
+  .project-buddy { grid-column:span 2; grid-row:span 2; }
+  .project-beauty,.project-dive,.project-prepress,.project-cube,.project-code,.project-kidz,.project-ktl,.project-signwriting,.project-hotels { grid-column:span 1; grid-row:span 1; }
+  .project-kidz,.project-ktl { min-height:0; }
+  .project-tile-copy { bottom:13px; left:12px; right:22px; gap:3px; }
+  .project-tile-copy strong { font-size:14px; }
+  .project-tile-copy small { font-size:9px; }
+  .project-tile-arrow { right:10px; bottom:13px; font-size:17px; }
+  .project-external { top:8px; right:8px; gap:4px; }
+  .social-icon { width:29px; height:29px; }
+  .social-icon svg { width:15px; height:15px; }
+}
+@media (max-width:400px) { .project-grid { grid-auto-rows:185px; } }
+@media (prefers-reduced-motion:reduce) { .project-image,.project-tile-arrow,.social-icon { transition:none; } }
