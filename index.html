@@ -1,688 +1,207 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <!-- Meta Descriptions -->
-    <meta http-equiv="Content-Type" content="text/html" ; charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Gizelle is a graphic designer, who thrives in the creative process. She brings ideas to life by designing captivating visuals for print, web design, and digital platforms, often incorporating coding skills to craft engaging interactive experiences."
-    />
-    <title>Gizelle</title>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="css/style.css"
-    />
-    <!-- media attribute can be screen or all to include your design in printing page -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Gizelle Alarcon — marketing, brand and digital creative across strategy, design, content and web.">
+  <meta name="theme-color" content="#f5f1eb">
+  <title>Gizelle Alarcon — Marketing, Brand & Digital Creative</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header">
+    <a class="wordmark" href="#top" aria-label="Gizelle Alarcon home">GIZELLE ALARCON<span>®</span></a>
+    <button class="menu-toggle" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav id="primary-nav" class="primary-nav" aria-label="Main navigation">
+      <a href="#work">Work</a>
+      <a href="#about">About</a>
+      <a href="#capabilities">Capabilities</a>
+      <a href="#contact" class="nav-contact">Contact <span>↗</span></a>
+    </nav>
+  </header>
 
-    <!-- React Script source that makes react work on your website -->
-    <!-- <script
-      type="application/javascript"
-      src="https://unpkg.com/react@16.0.0/umd/react.production.min.js"
-    ></script>
-    <script
-      type="application/javascript"
-      src="https://unpkg.com/react-dom@16.0.0/umd/react-dom.production.min.js"
-    ></script>
-    <script
-      type="application/javascript"
-      src="https://unpkg.com/babel-standalone@6.26.0/babel.js"
-    ></script> -->
-  </head>
-  <body>
-    <!-- id only use once -->
-    <div id="page">
-      <header class="cover-image">
-        <!-- span = inline element like anchor tag, extra character on the element-->
-        <!-- <a class="logo" title="MyLegend" href="index.html"
-          ><span>MyLegend</span></a
-        > -->
+  <main id="main">
+    <section class="hero section-wrap" id="top">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> Marketing · Brand · Digital experience</p>
+        <h1>Creative ideas.<br>Meaningful growth.<br><em>Better experiences.</em></h1>
+        <p class="hero-intro">I connect marketing strategy, thoughtful design and digital know-how to help brands build visibility, engage audiences and grow.</p>
+        <a class="text-link" href="#work">Explore selected work <span>↘</span></a>
+        <div class="hero-note"><span class="note-line"></span> Strategy / Design / Technology</div>
+      </div>
 
-        <!-- Banner sizes: 1200x400, 825x300, 625x160, 425x110 -->
-        <div class="hero">
-          <!-- Create a roll to change design to conceptualize, curate, create, code-->
-          <!-- <h1>
-            I <span class="text-rotator">design</span> <br />
-            brands &amp; products
-          </h1> -->
-
-          <div id="hero-container">
-            <h1>
-              <div>Gizelle Alarcon</div>
-              <div id="flip">
-                <div><div>creates</div></div>
-                <div><div>codes</div></div>
-                <div><div>collaborates</div></div>
-              </div>
-              <div>with your brand.</div>
-            </h1>
-          </div>
-
-          <!-- Quick buttons -->
-          <div id="quick-links">
-            <a class="button" title="Resume" href="#contact-section"
-              ><span>Contact Me</span></a
-            >
-            <a class="button" title="Projects" href="#portfolio-section"
-              ><span>View Projects</span></a
-            >
+      <div class="hero-art" aria-label="Creative collage representing product, brand and digital design">
+        <div class="hero-orbit"></div>
+        <div class="hero-coral"></div>
+        <div class="hero-sticker sticker-buddy">
+          <span class="sticker-icon">♡</span>
+          <strong>Buddy</strong>
+          <small>SMART BABY MONITOR</small>
+          <div class="phone-ui">
+            <div class="phone-top"><span>9:41</span><span>● ● ●</span></div>
+            <div class="phone-brand">♡ Buddy</div>
+            <div class="status-check">✓</div>
+            <b>All is well</b>
+            <div class="baby-placeholder">✳</div>
+            <div class="phone-controls"><i>◉</i><i>♫</i><i>⚙</i></div>
           </div>
         </div>
-
-        <!-- Navigation Hamburger Menu -->
-        <section class="p-menu1">
-          <nav id="navbar" class="navigation" role="navigation">
-            <input id="toggle1" type="checkbox" />
-            <label class="hamburger1" for="toggle1">
-              <div class="top"></div>
-              <div class="meat"></div>
-              <div class="bottom"></div>
-            </label>
-
-            <nav class="menu1">
-              <a class="link1" href="index.html">Home</a>
-              <a class="link1" href="#portfolio-section">Portfolio</a>
-              <a class="link1" href="#contact-section"/>Contact</a>
-            </nav>
-          </nav>
-        </section>
-      </header>
-
-      <section class="grey-container">
-        <div class="container1">
-          <div class="container-col1">
-            <div>
-              <h2>Designer for Hire</h2>
-              <h4>Curiously Creative</h4>
-              <hr class="rounded" />
-            </div>
-            <div class="content-col1">
-              <p>
-                I engage in the creative process of conceptualizing, designing,
-                and producing visual content for different mediums such as
-                print, web design, and digital platforms. This often entails
-                incorporating elements of coding to create interactive
-                experiences.
-              </p>
-            </div>
-          </div>
+        <div class="hero-sticker sticker-label">
+          <span>SELECTED</span><b>PRINT<br>DETAILS</b><small>FOIL · FINISH · FORM</small>
         </div>
-      </section>
+        <div class="hero-flower">✳</div>
+        <p class="art-caption">A little bit of everything.<br>Always made with purpose.</p>
+      </div>
+    </section>
 
-      <section class="white-container">
-        <div class="container1">
-          <div class="container-col1">
-            <div>
-              <h2>Scope</h2>
-              <h4>Strategy · Design · Marketing</h4>
-              <hr class="rounded" />
-            </div>
-            <div class="content-col1">
-              <p>
-                Crafting strategic design solutions entails meticulous planning
-                and innovative thinking. By collaborating closely with clients,
-                tailored designs are developed from concept to execution,
-                ensuring alignment with objectives and resonance with target
-                audiences. This collaborative approach enables the realization
-                of visionary ideas and the elevation of brands to new heights of
-                success.
-              </p>
-            </div>
+    <section class="work-section section-wrap" id="work">
+      <div class="section-heading">
+        <div><p class="eyebrow">A selection of projects and work experience</p><h2>Selected <em>work.</em></h2></div>
+        <p class="section-aside">Different disciplines.<br>One curious mind.</p>
+      </div>
+      <div class="filter-bar" role="group" aria-label="Filter projects">
+        <button class="filter-btn is-active" data-filter="all" aria-pressed="true">All work <span>10</span></button>
+        <button class="filter-btn" data-filter="brand" aria-pressed="false">Brand & graphic</button>
+        <button class="filter-btn" data-filter="digital" aria-pressed="false">Digital & UI/UX</button>
+        <button class="filter-btn" data-filter="print" aria-pressed="false">Print & production</button>
+      </div>
+      <div class="project-grid">
+        <article class="project-card project-featured" data-category="digital" data-project="kidz" tabindex="0" role="button" aria-label="View Kidz Therapy digital marketing and brand transformation case study">
+          <div class="project-art art-kidz">
+            <div class="kidz-sheet"><span class="kidz-kicker">Kidz Therapy · Auckland</span><strong>Making a difference to young minds.</strong><div class="kidz-sun"></div><div class="kidz-line"></div><div class="kidz-line short"></div></div>
+            <span class="art-index">01 / DIGITAL GROWTH</span>
           </div>
+          <div class="project-meta"><div><h3>Kidz Therapy</h3><p>Website transformation · SEO · Content · Social</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="digital" data-project="ktl" tabindex="0" role="button" aria-label="View KTL Tuition digital marketing and brand transformation case study">
+          <div class="project-art art-ktl">
+            <div class="ktl-sheet"><div class="ktl-top"><span>KTL Tuition</span><span>Learn / Grow</span></div><strong>Learning<br>that moves<br>you forward.</strong><span class="ktl-highlight">PERSONALISED TUITION</span><div class="ktl-bars"><i></i><i></i><i></i><i></i></div></div>
+            <span class="art-index">02 / BRAND & MARKETING</span>
+          </div>
+          <div class="project-meta"><div><h3>KTL Tuition</h3><p>Website overhaul · SEO · Social · Blog content</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card project-featured" data-category="digital" data-project="buddy" tabindex="0" role="button" aria-label="View Buddy project details">
+          <div class="project-art art-buddy">
+            <div class="buddy-brand">♡ <b>Buddy</b><small>SMART BABY MONITOR</small></div>
+            <div class="device-camera"><div class="camera-lens"></div><span>♡</span></div>
+            <div class="mini-phone"><div class="mini-screen">♡<br><small>All is well</small><div class="mini-wave">〰〰〰</div></div></div>
+            <span class="art-index">01 / PRODUCT CONCEPT</span>
+          </div>
+          <div class="project-meta"><div><h3>Buddy — Smart Baby Monitor</h3><p>Product concept · UI/UX · Prototyping</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="brand" data-project="beauty" tabindex="0" role="button" aria-label="View Beauty Ethics project details">
+          <div class="project-art art-beauty">
+            <div class="beauty-leaf">✳</div><div class="bottle bottle-tall"><b>BEAUTY<br>ETHICS</b><small>NATURAL SKINCARE</small></div><div class="bottle bottle-short"><b>BE</b></div>
+            <span class="art-index">02 / PACKAGING</span>
+          </div>
+          <div class="project-meta"><div><h3>Beauty Ethics</h3><p>Branding · Packaging · Product design</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="brand" data-project="dive" tabindex="0" role="button" aria-label="View Dive Doctors project details">
+          <div class="project-art art-dive">
+            <div class="dive-ripple">◉</div><div class="dive-name">Dive<br><b>Doctors</b></div><span class="art-index">03 / IDENTITY</span>
+          </div>
+          <div class="project-meta"><div><h3>Dive Doctors</h3><p>Logo design · Brand identity</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="print" data-project="prepress" tabindex="0" role="button" aria-label="View print and prepress project details">
+          <div class="project-art art-print">
+            <div class="foil-frame"><span>✳</span><b>PRINT<br>WITH<br>IMPACT</b></div><span class="art-index">04 / FINISHING</span>
+          </div>
+          <div class="project-meta"><div><h3>Self-Adhesive Labels</h3><p>Prepress · Foiling · Embossing</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="brand" data-project="cube" tabindex="0" role="button" aria-label="View Cube Group project details">
+          <div class="project-art art-cube">
+            <div class="cube-symbol"><i></i><i></i><i></i></div><div class="cube-type">CUBE<br><b>GROUP</b></div><span class="art-index">05 / COLLATERAL</span>
+          </div>
+          <div class="project-meta"><div><h3>Cube Group</h3><p>Logo refinement · Collateral · Infographics</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="digital" data-project="code" tabindex="0" role="button" aria-label="View coding projects details">
+          <div class="project-art art-code">
+            <div class="code-window"><div class="code-dots">● ● ●</div><p><i>const</i> idea = <b>"curiosity"</b>;</p><p><i>function</i> create() {</p><p class="indent">return <b>somethingUseful</b>;</p><p>}</p><div class="code-cursor"></div></div><span class="art-index">06 / DEVELOPMENT</span>
+          </div>
+          <div class="project-meta"><div><h3>Coded Programs</h3><p>JavaScript · Python · C#</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="print" data-project="signwriting" tabindex="0" role="button" aria-label="View signwriting experience details">
+          <div class="project-art art-sign">
+            <div class="sign-panel"><small>MAKE IT</small><b>STAND<br>OUT.</b><span>DESIGN / PRINT / SIGNAGE</span></div><span class="art-index">07 / LARGE FORMAT</span>
+          </div>
+          <div class="project-meta"><div><h3>Signwriting & Creative Services</h3><p>Graphic design · Signage · Marketing</p></div><span class="card-arrow">↗</span></div>
+        </article>
+
+        <article class="project-card" data-category="digital" data-project="hotels" tabindex="0" role="button" aria-label="View Hotels.com campaign details">
+          <div class="project-art art-hotels">
+            <div class="hotel-card"><small>GO SOMEWHERE</small><b>Stay<br>curious.</b><span>HOTELS.COM / CAMPAIGN</span></div><span class="art-index">08 / CAMPAIGN</span>
+          </div>
+          <div class="project-meta"><div><h3>Hotels.com Campaign</h3><p>Digital advertising · Curation · Motion</p></div><span class="card-arrow">↗</span></div>
+        </article>
+      </div>
+      <p class="portfolio-note">These project covers are editable visual placeholders. Swap them for your original project images before publishing.</p>
+    </section>
+
+    <section class="capabilities-section" id="capabilities">
+      <div class="section-wrap">
+        <div class="capabilities-top"><p class="eyebrow">What I bring to the table</p><h2>Creative thinking.<br><em>Practical making.</em></h2></div>
+        <div class="capability-grid">
+          <div class="capability"><span class="cap-icon">✳</span><h3>Brand & graphic design</h3><p>Identity systems, visual storytelling, campaign assets and creative direction.</p></div>
+          <div class="capability"><span class="cap-icon">⌘</span><h3>Digital & UI/UX</h3><p>Web design, user journeys, wireframes, prototypes and responsive experiences.</p></div>
+          <div class="capability"><span class="cap-icon">▤</span><h3>Print & production</h3><p>Packaging, labels, prepress, print finishing and production-ready artwork.</p></div>
+          <div class="capability"><span class="cap-icon">↗</span><h3>Marketing & growth</h3><p>Marketing planning, SEO, content strategy, email campaigns, social media and performance-led optimisation.</p></div>
         </div>
+      </div>
+    </section>
 
-        <div class="container3">
-          <div class="container-col3">
-            <div class="container-grid3">
-              <div class="grid-item-icons">
-                <img
-                  class="iconattributes"
-                  src="img/icon-web-design.svg"
-                  alt="Design"
-                />
-                <h4>Design</h4>
-                <p class="icon-blurb">
-                  Elevate your brand with captivating designs crafted by a
-                  passionate graphic artist. From logos to illustrations, I
-                  bring creativity and precision to every project. Let's make
-                  your vision stand out in today's market.
-                </p>
-              </div>
-              <div class="grid-item-icons">
-                <img
-                  class="iconattributes"
-                  src="img/icon-print.svg"
-                  alt="Print"
-                />
-                <h4>Print</h4>
-                <p class="icon-blurb">
-                  Extensive experience in the print industry including large-format printing and
-                  packaging. Enhance your brand with premium prints and tailored
-                  packaging solutions. Experience the power of captivating
-                  visuals and boost your sales.
-                </p>
-              </div>
-              <div class="grid-item-icons">
-                <img
-                  class="iconattributes"
-                  src="img/icon-responsive.svg"
-                  alt="Digital"
-                />
-                <h4>Digital</h4>
-                <p class="icon-blurb">
-                  Experience a dynamic website optimized code designed to
-                  drive audience engagement. Meticulous UX and UI design will offer a seamless
-                  user experience, leading to increased engagement and
-                  conversions.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+    <section class="about-section section-wrap" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">A little about me</p>
+        <h2>Curious by nature.<br><em>Creative by practice.</em></h2>
+        <p>I'm a multidisciplinary marketing and creative professional working across brand development, digital marketing, graphic design and web development. In my current role supporting Kidz Therapy and KTL Tuition, I lead practical improvements across websites, SEO, social media and content—bringing two distinct brands together through clearer digital experiences and more consistent communication.</p>
+        <p>I enjoy combining creative thinking with research and performance insight: understanding an audience, shaping a message, then bringing it to life across web, social, email, print and content.</p>
+        <a class="text-link" href="#contact">A little more about working together <span>↘</span></a>
+      </div>
+      <div class="about-art">
+        <div class="about-sun"></div><div class="about-ring"></div>
+        <div class="about-shape">G.</div>
+        <p>DESIGN<br>WITH<br>INTENTION.</p>
+      </div>
+    </section>
 
-      <!-- Skills Section -->
+    <section class="contact-section" id="contact">
+      <div class="section-wrap contact-inner">
+        <p class="eyebrow">Have a good one in mind?</p>
+        <h2>Let's make<br><em>something matter.</em></h2>
+        <div class="contact-bottom"><p>Have a project, an opportunity or just want to say hello? I'd love to hear from you.</p><a class="contact-button" href="mailto:contactinggizelle@gmail.com">Get in touch <span>↗</span></a></div>
+      </div>
+    </section>
+  </main>
 
-      <section class="grey-container">
-        <h2>Skills</h2>
-        <hr class="rounded" />
+  <footer class="site-footer section-wrap">
+    <a class="wordmark" href="#top">GIZELLE ALARCON<span>®</span></a>
+    <p>Independent designer · Auckland, New Zealand</p>
+    <a href="mailto:contactinggizelle@gmail.com">Email ↗</a>
+    <small>© <span id="year"></span> Gizelle Alarcon. Made with intention.</small>
+  </footer>
 
-        <hr class="spacer" />
-
-        <h4>Graphic Design Concepts</h4>
-        <div class="container6">
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Development &amp; Methodology</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>Wireframing &amp; Prototyping</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>UI / UX Design</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Branding</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter five5"></div>
-            <h6>Colour Theory &amp; Composition</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>Flowchart Planning</h6>
-          </div>
-        </div>
-        <hr class="spacer" />
-
-        <h4>Digital Content & Marketing</h4>
-        <div class="container6">
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>SEO Optimization</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Email Campaigns</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter five5"></div>
-            <h6>Copywriting</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>PPC Advertising</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Monitor & Analyse Performance</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>Product / Services Placement</h6>
-          </div>
-        </div>
-
-        <h4>Design Programs</h4>
-        <div class="container6">
-          <div class="container-col6">
-            <div class="skillmeter five5"></div>
-            <h6>Figma</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter five5"></div>
-            <h6>Adobe XD</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Adobe Illustrator</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Adobe InDesign</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Adobe Photoshop</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>CERM / ESKO Print Automation</h6>
-          </div>
-        </div>
-        <hr class="spacer" />
-
-        <h4>Coding Languages</h4>
-        <div class="container6">
-          <div class="container-col6">
-            <div class="skillmeter five5"></div>
-            <h6>HTML</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>CSS</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter two5"></div>
-            <h6>Javascript</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter two5"></div>
-            <h6>Python</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter two5"></div>
-            <h6>React</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter one5"></div>
-            <h6>C#</h6>
-          </div>
-        </div>
-        <hr class="spacer" />
-
-        <h4>Administration</h4>
-        <div class="container6">
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>Visual Studio Code</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>GitHub</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter two5"></div>
-            <h6>OS Terminal</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter four5"></div>
-            <h6>Microsoft 365</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter three5"></div>
-            <h6>Microsoft SQL Server</h6>
-          </div>
-          <div class="container-col6">
-            <div class="skillmeter one5"></div>
-            <h6>Cybersecurity / Penetration Testing</h6>
-          </div>
-        </div>
-
-        <hr class="spacer" />
-      </section>
-
-      <!-- Portfolio Section -->
-      <div id="portfolio-section"></div>
-      <section class="white-container">
-        <div class="container1">
-          <div class="container-col1">
-            <div>
-              <h2>Portfolio</h2>
-              <h4>Freelance Design · Work Experience · App Prototype</h4>
-              <hr class="rounded" />
-            </div>
-            <div class="content-col1"></div>
-          </div>
-        </div>
-
-        <div class="container2">
-          <div class="container-col2">
-            <div class="container-grid2">
-
-              <a href="buddy.html">
-                <div class="grid-item-portfolio portfolio-linked">
-                  <iframe
-                    width="auto"
-                    height="auto"
-                    src="https://www.youtube.com/embed/ygWKiOR5VgM?si=TbFlFFLTbI3Jk5xG"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin"
-                    allowfullscreen
-                  ></iframe>
-                  <hr class="spacer" />
-                  <h5>Buddy Baby Monitor</h5>
-                  <h6>
-                    Insight & Development | Prototyping | Product Design |
-                    Branding | UI/UX | Testing | Web Design | Market Evaluation &
-                    Methodology | Kanban Development | App Design
-                  </h6>
-                  <br />
-                  <div class="portfolio-blurb">
-                    <p>
-                      I invented Buddy Smart Baby Device to solve challenges and
-                      optimise daily routines seamlessly. In a connected world, IoT
-                      applications streamline tasks, boost efficiency, and redefine
-                      daily life to unlock convenience, control and innovate home
-                      automation and revolutionize healthcare.
-                    </p>
-                    <br>
-                    <p>
-                      Wireframing and prototyping apps were essential in developing 
-                      Buddy's design. They allowed me to visualize and refine its 
-                      features, ensuring intuitive navigation and flawless functionality. 
-                      By utilizing these tools, I crafted interactive prototypes 
-                      showcasing Buddy's real-time monitoring and user-friendly interface. 
-                      These prototypes served as a dynamic platform for investors to 
-                      experience firsthand how Buddy operates. Leveraging these technologies, 
-                      I streamlined our development process, fostered collaboration, and 
-                      demonstrated Buddy's potential to deliver an unparalleled baby care 
-                      experience, captivating investor interest.
-                    </p>
-                  </div>
-                </div>
-              </a>
-
-              <a href="coding.html">
-                <div class="grid-item-portfolio portfolio-linked">
-                  <img src="img/slide-coding-500.png" alt="Coded Programs" />
-                  <hr class="spacer" />
-                  <h5>Coded Programs</h5>
-                  <h6>
-                    Javascript | Python | C# | Flowchart | Functions | 
-                    Development Methodoly | Data Validation | String Manipulation | Debugging
-                  </h6>
-                  <br />
-                  <p class="portfolio-blurb">
-                    Collection of programs designed and coded using JavaScript, Python, 
-                    and C#. I explored the fundamentals of programming in a supportive 
-                    environment. Learning about functions and debugging to understanding 
-                    development methodologies, each step brings me closer to mastering 
-                    the art of coding. Through hands-on practice and guided exploration,
-                    I delved into the complexities of data validation, string manipulation, 
-                    and beyond. Gradually gaining the confidence and expertise needed to 
-                    navigate the dynamic landscape of software development.
-                  </p>
-                </div>
-              </a>
-
-              <div class="grid-item-portfolio">
-                <img src="img/slide-wines-500.png" alt="Prepress" />
-                <hr class="spacer" />
-                <h5>Self Adhesive Labels</h5>
-                <h6>
-                  Design Brief Interpretation | Graphic Design | Modulation &
-                  Automation | Digital & Offset Printing | CTP Maintanance |
-                  Plate Sourcing & Manufacturing | High Build | Foiling |
-                  Embossing
-                </h6>
-                <br />
-                <p class="portfolio-blurb">
-                  Responsible for ensuring that designs seamlessly transition
-                  from concept to production, prepress play a vital role in
-                  maintaining quality and efficiency. Meticulously preparing
-                  digital files to collaborating closely with designers and
-                  press operators, every label met the highest standards. A keen
-                  eye for detail is integral to delivering excellence and
-                  delivering exceptional results.
-                </p>
-              </div>
-
-              <div class="grid-item-portfolio">
-                <img src="img/slide-signwriting-500.png" alt="Signwriting" />
-                <hr class="spacer" />
-                <h5>Signwriting Companies</h5>
-                <h6>
-                  Graphic Design | Social Media Marketing | Website Maintenance
-                  | Print Services | Large Format Printing | Multipage Spread |
-                  Book Binding | Stationery | Signwriting
-                </h6>
-                <br />
-                <p class="portfolio-blurb">
-                  I had the privilege of working for several family-owned
-                  signwriting companies across 3 different countries: NZ,
-                  Australia and England. This experience allowed me to wear many
-                  hats. Graphic design, providing various print solutions,
-                  digital design, online marketing campaigns just to list a few.
-                  It was a journey filled with diverse challenges and rewarding
-                  opportunities, where I honed my skills and gained invaluable
-                  insights into the signwriting industry.
-                </p>
-              </div>
-
-              <a href="https://divedoctor.co.nz/" target="_blank">
-                <div class="grid-item-portfolio portfolio-linked">
-                  <img src="img/slide-dive-doctor-500.png" alt="Dive Doctors" />
-                  <hr class="spacer" />
-                  <h5>Dive Doctors</h5>
-                  <h6>Logo Design | Branding</h6>
-                  <br />
-                  <p class="portfolio-blurb">
-                    I had the pleasure of crafting a distinctive logo for Dive
-                    Doctors, a premier dive shop based in New Zealand. By blending
-                    elements of adventure, professionalism, and marine life, we
-                    created a logo that not only represents the brand's commitment
-                    to excellence but also resonates with diving enthusiasts. Dive
-                    Doctors now stands out with a unique visual identity that
-                    captures the spirit of exploration beneath the waves.
-                  </p>
-                </div>
-              </a>
-
-              <div class="grid-item-portfolio">
-                <img
-                  src="img/slide-be-packaging-500.png"
-                  alt="Beauty Ethics"
-                />
-                <h5>Beauty Ethics Skincare Range</h5>
-                <h6>
-                  Insight & Development | Product Design | Branding | Packaging
-                  Design | Prototyping | Concept Presentation | Print
-                </h6>
-                <br />
-                <p class="portfolio-blurb">
-                  Designing packaging for Beauty Ethics, a New Zealand-based
-                  skincare brand, is a journey in crafting elegance and
-                  sustainability. The mission to encapsulate the essence of
-                  nature's purity while ensuring ethical practices in every
-                  step. The packaging solutions echo the brand's commitment to
-                  holistic beauty, fostering a sense of luxury and
-                  responsibility. Beauty Ethics packaging tells a story of
-                  authenticity and care.
-                </p>
-              </div>
-
-              <div class="grid-item-portfolio">
-                <img src="img/slide-cube-500.jpg" alt="Stationery" />
-                <hr class="spacer" />
-                <h5>Cube Group</h5>
-                <h6>
-                  Design Brief Interpretation | Logo Refinement | Info Graphic |
-                  Collateral Design
-                </h6>
-                <br />
-                <p class="portfolio-blurb">
-                  I refined the Cube Group logo and created collateral for this
-                  start-up construction businesses. I work closely with the
-                  owner to capture their brand essence and extend it across all
-                  materials, from business cards to company policy and procedure
-                  manuscript.
-                </p>
-              </div>
-
-              <div class="grid-item-portfolio">
-                <iframe
-                  src="https://www.behance.net/embed/project/10661625?ilo0=1"
-                  height="auto"
-                  width="auto"
-                  allowfullscreen
-                  lazyload
-                  frameborder="0"
-                  allow="clipboard-write"
-                  refererPolicy="strict-origin-when-cross-origin"
-                ></iframe>
-                <hr class="spacer" />
-                <h5>hotels.com Advertising Campaign</h5>
-                <h6>Curation | Online Advertising | Motion Graphics</h6>
-                <br />
-                <div class="portfolio-blurb">
-                  <p>
-                    My primary objective for hotels.com was twofold: to showcase
-                    the unique offerings of each hotel while also enticing viewers
-                    to consider booking their next stay. To achieve this, I delved
-                    deep into the distinct charm and appeal of each property,
-                    meticulously crafting narratives that would resonate with the
-                    audience. Through compelling storytelling and visually
-                    stunning imagery, I aimed to evoke a sense of wanderlust and
-                    excitement, capturing every aspect of the hotel experience to
-                    leave a lasting impression.
-                  </p>
-                  <br />
-                  <p>
-                    Online advertising in strategic sites plays a crucial role in
-                    the success of hotels.com. Strategically placing
-                    advertisements across various online platforms and channels,
-                    hotels.com can effectively reach and engage with their target
-                    audience ensuring maximum visibility and exposure for
-                    hotels.com, allowing them to showcase their unique offerings
-                    and attract potential guests and stay competitive in the
-                    digital landscape, driving traffic to their website and
-                    ultimately increasing bookings.
-                  </p>
-                </div>
-              </div>
-<!--
-              <a href="https://www.youtube.com/watch?v=kdcLwmKgAkk" target="_blank">
-                <div class="grid-item-portfolio portfolio-linked">
-                  <img src="img/nz-beef-lamb-ad.png" alt="NZ Beef and Lamb Ad" />
-                  <hr class="spacer" />
-                  <h5>TV Advertisement</h5>
-                  <h6>Motion Graphics | Animation | Colour Grading</h6>
-                  <br />
-                  <p class="portfolio-blurb">
-                    Working with top-tier creatives at Jamie McKenzie's 
-                    company, Pure Production was incredibly inspiring. 
-                    Their passion and dedication elevated every project, 
-                    pushing boundaries and fostering a collaborative 
-                    environment where ideas thrived. Learning from their 
-                    expertise was invaluable, and the camaraderie within 
-                    the team was unmatched. It was an experience that left 
-                    a lasting impression, fueling my drive to continually 
-                    strive for excellence in all aspects of my work.
-                  </p>
-                </div>
-              </a>
-
-              <div class="grid-item-portfolio">
-                <img src="img/nz-beef-lamb-ad.png" alt="NZ Beef and Lamb Ad" />
-                <hr class="spacer" />
-                <h5>TV Advertisement</h5>
-                <h6>Motion Graphics | Animation | Colour Grading</h6>
-                <br />
-                <p class="portfolio-blurb">
-                  Working with top-tier creatives at Jamie McKenzie's 
-                  company, Pure Production was incredibly inspiring. 
-                  Their passion and dedication elevated every project, 
-                  pushing boundaries and fostering a collaborative 
-                  environment where ideas thrived. Learning from their 
-                  expertise was invaluable, and the camaraderie within 
-                  the team was unmatched. It was an experience that left 
-                  a lasting impression, fueling my drive to continually 
-                  strive for excellence in all aspects of my work.
-                </p>
-              </div>
--->
-              <!-- Add more grid items as needed -->
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Code a usable contact section -->
-
-      <div id="contact-section"></div>
-      <section class="contact">
-        <div class="container1">
-          <div class="container-col1">
-            <div>
-              <h2>Get in Touch</h2>
-              <hr class="rounded" />
-            </div>
-            <div class="content-col1">
-              <p>
-                Ready to take the next step? Whether you have questions or
-                ideas, I'm here to listen. Drop me a message using the form
-                below and let's start a conversation. Your feedback and
-                inquiries are valuable, and I look forward to hearing from you
-                soon!
-                <br><br>
-                Email me at contactinggizelle@gmail.com
-              </p>
-            </div>
-            <div>
-              <a
-                class="button"
-                id="contact-button"
-                title="Collaborate"
-                href="mailto:contactinggizelle@gmail.com"
-                >Get in Touch</a
-              >
-            </div>
-          </div>
-        </div>
-        <hr class="spacer" />
-      </section>
-
-      <footer>
-        <p>
-          &copy; Copyright 2004 -
-          <script type="text/javascript">
-            document.write(new Date().getFullYear());
-          </script>
-          | <strong>Gizelle Alarcon</strong> | All Rights Reserved
-        </p>
-        <!-- todo - Create Privacy Policy and Terms of Service info
-        - Perhaps a overlay hover or popup? -->
-        <!-- <div class="content">
-          <a title="Privacy Policy" href=""
-            >Privacy Policy</a
-          >
-          <a title="Terms of Service" href=""
-            >Terms of Service</a
-          >
-        </div> -->
-      </footer>
-    </div>
-
-    <!-- <script type="text/babel">
-      function tick() {
-        const element = (
-          <div>
-            <h6>Time: {new Date().toLocaleTimeString()}</h6>
-          </div>
-        );
-
-        ReactDOM.render(element, document.querySelector(".timedisplay"));
-      }
-
-      setInterval(tick, 1000);
-    </script> -->
-  </body>
+  <dialog class="project-dialog" aria-labelledby="dialog-title">
+    <button class="dialog-close" aria-label="Close project details">×</button>
+    <p class="eyebrow" id="dialog-category">PROJECT</p>
+    <h2 id="dialog-title">Project title</h2>
+    <p id="dialog-description"></p>
+    <div class="dialog-details"><strong>Focus</strong><span id="dialog-focus"></span></div>
+    <p class="dialog-hint">Replace this summary with your own project story, process images and final outcomes.</p>
+  </dialog>
+</body>
 </html>
