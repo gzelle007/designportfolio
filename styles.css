@@ -139,18 +139,27 @@ h2 em {
   font-style: normal;
 }
 .hero h1 em {
+  font-family: "Fleur De Leah", cursive;
+  font-size: 1.3em;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 0;
+  line-height: 0.8;
+  color: #ff7868;
+  display: inline-block;
   position: relative;
   white-space: nowrap;
+  padding-right: 0.08em;
 }
 .hero h1 em::after {
   content: "";
   position: absolute;
-  height: 7px;
+  bottom: -0.06em;
+  left: 5%;
+  width: 90%;
+  height: 4px;
+  background: #ff7868;
   border-radius: 50%;
-  background: var(--coral);
-  left: 2px;
-  right: 0;
-  bottom: -5px;
   transform: rotate(-2deg);
 }
 .hero-intro {
