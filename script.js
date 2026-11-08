@@ -25,9 +25,7 @@ const projectInfo = {
     description:
       "A connected baby-monitor concept exploring product design, research, brand identity and a parent-focused mobile experience.",
     focus: "Product concept, research, UI/UX, prototyping and branding.",
-    links: {
-      website: "https://gzelle007.github.io/designportfolio/buddy.html",
-    },
+    links: {},
   },
   beauty: {
     category: "Brand / Packaging",
@@ -41,9 +39,11 @@ const projectInfo = {
     category: "Brand identity",
     title: "Dive Doctors",
     description:
-      "Brand identity work for a diving business, inspired by the ocean and a spirit of adventure.",
+      "Brand identity work for a diving business in Auckland, inspired by the ocean and a spirit of adventure.",
     focus: "Logo design, visual identity and brand applications.",
-    links: {},
+    links: {
+      website: "https://divedoctor.co.nz/",
+    },
   },
   prepress: {
     category: "Print / Production",
@@ -57,9 +57,11 @@ const projectInfo = {
     category: "Brand collateral",
     title: "Cube Group",
     description:
-      "Visual identity refinement and practical branded collateral for a construction business.",
+      "Visual identity refinement and practical branded collateral for an Auckland commercial construction business.",
     focus: "Identity, business collateral and infographics.",
-    links: {},
+    links: {
+      website: "https://cubegroup.nz/",
+    },
   },
   code: {
     category: "Development",
@@ -78,6 +80,7 @@ const projectInfo = {
     links: {
       website: "https://www.kidztherapy.co.nz/",
       facebook: "https://www.facebook.com/kidztherapynz",
+      instagram: "https://www.instagram.com/kidztherapynz/",
     },
   },
   ktl: {
@@ -96,9 +99,11 @@ const projectInfo = {
     category: "Creative services",
     title: "Signwriting & Creative Services",
     description:
-      "Graphic design, signage and marketing work across print and large-format applications.",
+      "Graphic design, signage and marketing work across print and large-format applications in Auckland, London and Gladstone, QLD (Aus).",
     focus: "Graphic design, signage and large-format production.",
-    links: {},
+    links: {
+      website: "https://www.signarama.co.uk/store/surbiton/our-work",
+    },
   },
   hotels: {
     category: "Digital campaign",
